@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
+
+import { Product } from 'src/app/models/products.model';
+import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
   selector: 'app-take-out-menu',
@@ -7,9 +9,11 @@ import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./take-out-menu.component.scss'],
 })
 export class TakeOutMenuComponent implements OnInit {
-  faCookieBite = faCookieBite;
+  products: Product[] = [];
 
-  constructor() {}
+  constructor(private productsService: ProductsService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.products = this.productsService.getTakeOutProducts();
+  }
 }
