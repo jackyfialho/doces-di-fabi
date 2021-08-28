@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './shared/components/navigation/navigation.component';
+import { TakeOutMenuComponent } from './shared/components/take-out-menu/take-out-menu.component';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent, NavigationComponent, TakeOutMenuComponent],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

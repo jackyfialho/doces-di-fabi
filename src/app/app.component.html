@@ -1,4 +1,11 @@
-<div class="container">
+<div class="container" [ngSwitch]="loadedFeature">
   <h1>Doces Di Fabi</h1>
-  <app-navigation></app-navigation>
+  <app-navigation
+    (featureSelected)="onNavigate($event)"
+    *ngIf="loadedFeature === 'menu'"
+  ></app-navigation>
+
+  <app-take-out-menu
+    *ngIf="loadedFeature === 'take-out-menu'"
+  ></app-take-out-menu>
 </div>
