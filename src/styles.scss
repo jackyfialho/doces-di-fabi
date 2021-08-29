@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import './styles/sass/reset';
+@import './styles/sass/fonts';
+@import './styles/sass/colors';
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
+/* Fonts */
 @import 'https://fonts.googleapis.com/css2?family=Parisienne&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;700&display=swap';

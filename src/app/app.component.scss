@@ -1,4 +1,10 @@
+@import 'src/styles/sass/base';
+
 .container {
   margin-top: 50px;
-  font-family: 'Parisienne', cursive;
+  color: $dark-brown;
+
+  h1 {
+    font-family: $font-primary;
+  }
 }
