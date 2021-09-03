@@ -3,8 +3,12 @@
 .container {
   margin-top: 50px;
   color: $dark-brown;
+  font-family: map-get($font-family, secondary);
+  text-align: center;
 
   h1 {
-    font-family: $font-primary;
+    font-family: map-get($font-family, primary);
+    margin-bottom: map-get($spacing, large);
+    font-weight: map-get($font-weight, bold);
   }
 }

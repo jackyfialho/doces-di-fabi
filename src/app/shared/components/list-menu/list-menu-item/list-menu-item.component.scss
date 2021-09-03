@@ -1,0 +1,50 @@
+@import 'src/styles/sass/base.scss';
+
+.container {
+  text-align: left;
+
+  .products-list-item {
+    display: flex;
+    flex-direction: column;
+    font-size: map-get($font-size, medium);
+    color: $dark-brown;
+    padding: map-get($spacing, small);
+
+    .product-name {
+      font-family: map-get($font-family, secondary);
+      font-weight: map-get($font-weight, bold);
+      margin-bottom: map-get($spacing, medium);
+
+      .icon {
+        color: $cookie-brown;
+        padding-right: map-get($spacing, small);
+      }
+    }
+
+    .product-price {
+      font-family: map-get($font-family, primary);
+      font-weight: map-get($font-weight, bold);
+    }
+  }
+
+  .product-flavors {
+    color: $dark-brown;
+    text-align: left;
+
+    span {
+      font-family: map-get($font-family, primary);
+      font-size: map-get($font-size, large);
+    }
+  }
+
+  @media (min-width: $sm) {
+    .products-list-item {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .product-name {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="products-list-item">
+    <div class="product-name">
+      <fa-icon class="icon" [icon]="faCookieBite"></fa-icon>
+      <span *ngIf="product.weight !== ''; else elseBlock">
+        {{ product.name }} - {{ product.weight }}
+      </span>
+      <ng-template #elseBlock> {{ product.name }}</ng-template>
+    </div>
+    <div class="product-price">{{ product.price }}</div>
+  </div>
+
+  <div *ngIf="product.flavors !== ''" class="product-flavors">
+    <span>Sabores:</span> {{ product.flavors }}
+  </div>
+
+  <hr />
+</div>

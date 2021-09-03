@@ -5,7 +5,15 @@
     *ngIf="loadedFeature === 'menu'"
   ></app-navigation>
 
-  <app-take-out-menu
+  <app-list-menu
     *ngIf="loadedFeature === 'take-out-menu'"
-  ></app-take-out-menu>
+    [products]="takeOutProducts"
+    [menu]="'takeOut'"
+  ></app-list-menu>
+
+  <app-list-menu
+    *ngIf="loadedFeature === 'pre-order-menu'"
+    [products]="preOrderProducts"
+    [menu]="'preOrder'"
+  ></app-list-menu>
 </div>

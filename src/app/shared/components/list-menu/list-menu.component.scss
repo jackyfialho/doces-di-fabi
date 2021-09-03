@@ -1,0 +1,35 @@
+@import 'src/styles/sass/base';
+
+.menu-container {
+  margin-bottom: map-get($spacing, xLarge);
+
+  .products-list {
+    color: $dark-brown;
+    background-color: $light-pink;
+    padding: map-get($spacing, large);
+    border-radius: map-get($spacing, small);
+  }
+
+  .menu-border {
+    border: 4px solid $white;
+    border-radius: map-get($spacing, small);
+    padding: map-get($spacing, large);
+    position: relative;
+
+    h4 {
+      margin: map-get($spacing, medium) 0;
+      text-decoration: underline;
+    }
+  }
+
+  .menu-img {
+    display: flex;
+    justify-content: center;
+    margin-top: map-get($spacing, xxLarge);
+
+    img {
+      position: absolute;
+      bottom: -30px;
+    }
+  }
+}

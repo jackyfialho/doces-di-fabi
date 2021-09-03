@@ -1,7 +1,24 @@
-$font-primary: 'Parisienne', cursive;
-$font-secondary: 'Urbanist', sans-serif;
+$parisienne: 'Parisienne', cursive;
+$urbanist: 'Urbanist', sans-serif;
 
 $font-family: (
-  primary: '' Parisienne ', cursive',
-  secondary: '' Urbanist ', sans-serif',
+  primary: parisienne,
+  secondary: urbanist,
+);
+
+$font-size: (
+  xSmall: 12px,
+  small: 14px,
+  xMedium: 16px,
+  medium: 18px,
+  large: 20px,
+  xLarge: 28px,
+  xxLarge: 40px,
+);
+
+$font-weight: (
+  light: light,
+  normal: 200,
+  medium: 500,
+  bold: bold,
 );

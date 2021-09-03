@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TakeOutMenuItemComponent } from './take-out-menu-item.component';
+import { ListMenuItemComponent } from './list-menu-item.component';
 
 describe('TakeOutMenuItemComponent', () => {
-  let component: TakeOutMenuItemComponent;
-  let fixture: ComponentFixture<TakeOutMenuItemComponent>;
+  let component: ListMenuItemComponent;
+  let fixture: ComponentFixture<ListMenuItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TakeOutMenuItemComponent ]
-    })
-    .compileComponents();
+      declarations: [ListMenuItemComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TakeOutMenuItemComponent);
+    fixture = TestBed.createComponent(ListMenuItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
