@@ -1,5 +1,6 @@
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+
 <div class="container" [ngSwitch]="loadedFeature">
-  <h1>Doces Di Fabi</h1>
   <app-navigation
     (featureSelected)="onNavigate($event)"
     *ngIf="loadedFeature === 'menu'"
@@ -17,3 +18,5 @@
     [menu]="'preOrder'"
   ></app-list-menu>
 </div>
+
+<app-footer></app-footer>

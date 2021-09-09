@@ -1,5 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
+import {
+  faShippingFast,
+  faBoxOpen,
+  faCookieBite,
+} from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -7,6 +13,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
   @Output() featureSelected = new EventEmitter<string>();
+  faShippingFast = faShippingFast;
+  faBoxOpen = faBoxOpen;
+  faCookieBite = faCookieBite;
 
   constructor() {}
 

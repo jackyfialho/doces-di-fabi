@@ -1,7 +1,7 @@
 @import 'src/styles/sass/base';
 
 .menu-container {
-  margin-bottom: map-get($spacing, xLarge);
+  margin-bottom: map-get($spacing, x-large);
 
   .products-list {
     color: $dark-brown;
@@ -25,7 +25,7 @@
   .menu-img {
     display: flex;
     justify-content: center;
-    margin-top: map-get($spacing, xxLarge);
+    margin-top: map-get($spacing, xx-large);
 
     img {
       position: absolute;
