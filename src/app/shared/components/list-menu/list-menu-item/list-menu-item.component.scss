@@ -31,7 +31,7 @@
     color: $dark-brown;
     text-align: left;
 
-    span {
+    p {
       font-family: map-get($font-family, primary);
       font-size: map-get($font-size, large);
     }

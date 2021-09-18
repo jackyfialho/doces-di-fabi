@@ -1,0 +1,13 @@
+@import 'src/styles/sass/base';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: map-get($font-family, primary);
+  font-size: map-get($font-size, small);
+  background-color: $light-pink;
+  padding: map-get($spacing, large) map-get($spacing, medium);
+  position: relative;
+  margin-top: auto;
+}

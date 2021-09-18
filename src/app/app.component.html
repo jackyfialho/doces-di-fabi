@@ -1,10 +1,12 @@
 <app-header (featureSelected)="onNavigate($event)"></app-header>
 
-<div class="container" [ngSwitch]="loadedFeature">
-  <app-navigation
-    (featureSelected)="onNavigate($event)"
-    *ngIf="loadedFeature === 'menu'"
-  ></app-navigation>
+<!-- <div class="container" [ngSwitch]="loadedFeature">
+  <div class="navigation-container">
+    <app-navigation
+      (featureSelected)="onNavigate($event)"
+      *ngIf="loadedFeature === 'menu'"
+    ></app-navigation>
+  </div>
 
   <app-list-menu
     *ngIf="loadedFeature === 'take-out-menu'"
@@ -17,6 +19,8 @@
     [products]="preOrderProducts"
     [menu]="'preOrder'"
   ></app-list-menu>
-</div>
+</div> -->
+
+<router-outlet></router-outlet>
 
 <app-footer></app-footer>

@@ -1,0 +1,9 @@
+@import 'src/styles/sass/base';
+
+.list-menu-subitem {
+  padding-left: 40px;
+
+  .subitem-text {
+    padding: map-get($spacing, x-small) 0;
+  }
+}

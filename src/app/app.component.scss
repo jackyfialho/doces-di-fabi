@@ -1,12 +1,18 @@
 @import 'src/styles/sass/base';
 
 .container {
-  margin-top: map-get($spacing, x-large);
   color: $dark-brown;
   font-family: map-get($font-family, secondary);
   text-align: center;
-  // display: flex;
-  // justify-content: center;
+  padding: 0;
+
+  .navigation-container {
+    @media (min-width: $sm) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
   h1 {
     font-family: map-get($font-family, primary);

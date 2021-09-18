@@ -1,24 +1,34 @@
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './shared/components/navigation/navigation.component';
+
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { NavigationComponent } from './pages/navigation/navigation.component';
 import { ListMenuComponent } from './shared/components/list-menu/list-menu.component';
 import { ListMenuItemComponent } from './shared/components/list-menu/list-menu-item/list-menu-item.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
+import { ListMenuSubitemComponent } from './shared/components/list-menu/list-menu-subitem/list-menu-subitem.component';
+import { TakeOutMenuComponent } from './pages/take-out-menu/take-out-menu.component';
+import { PreOrderMenuComponent } from './pages/pre-order-menu/pre-order-menu.component';
+import { CompleteMenuComponent } from './pages/complete-menu/complete-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
     ListMenuComponent,
     ListMenuItemComponent,
     HeaderComponent,
     FooterComponent,
+    NavigationComponent,
+    ListMenuSubitemComponent,
+    TakeOutMenuComponent,
+    PreOrderMenuComponent,
+    CompleteMenuComponent,
   ],
-  imports: [BrowserModule, FontAwesomeModule],
+  imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

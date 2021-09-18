@@ -2,7 +2,7 @@ export class Product {
   public name: string;
   public price: string;
   public description: string;
-  public flavors?: string;
+  public flavors?: string[];
   public weight?: string;
   public imagePath?: string;
 
@@ -11,7 +11,7 @@ export class Product {
     price: string,
     desc: string,
     weight?: string,
-    flavs?: string,
+    flavs?: string[],
     imgPath?: string,
   ) {
     this.name = name;

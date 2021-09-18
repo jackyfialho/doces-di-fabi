@@ -1,6 +1,7 @@
 @import 'src/styles/sass/base';
 
 .menu-container {
+  margin-top: map-get($spacing, x-large);
   margin-bottom: map-get($spacing, x-large);
 
   .products-list {
