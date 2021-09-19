@@ -33,7 +33,6 @@
       justify-content: flex-start;
       width: 100%;
       position: relative;
-      // padding-left: map-get($spacing, x-large);
 
       @media (min-width: $sm) {
         padding-left: map-get($spacing, x-large);
@@ -47,6 +46,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        color: $dark-brown;
 
         &:not(:last-child) {
           margin-bottom: map-get($spacing, x-large);
@@ -67,9 +67,19 @@
         font-weight: map-get($font-weight, bold);
         min-width: 200px;
         text-align: center;
+        color: $dark-brown;
+
+        @media (min-width: $xs) {
+          top: 14px;
+          left: 87px;
+          text-align: left;
+          max-width: 220px;
+          padding: map-get($spacing, medium) map-get($spacing, medium)
+            map-get($spacing, medium) map-get($spacing, xx-large);
+        }
 
         @media (min-width: $sm) {
-          top: 26px;
+          top: 22px;
           left: 128px;
           text-align: left;
           min-width: 350px;

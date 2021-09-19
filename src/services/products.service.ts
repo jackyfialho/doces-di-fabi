@@ -8,16 +8,14 @@ import { Product } from 'src/models/products.model';
 export class ProductsService {
   private takeOutProducts: Product[] = [
     new Product(
-      'Bolo de Pote',
+      'Bolo de pote',
       'R$ 13,00',
       'Bolo de massa amanteigada e camadas generosas de dois recheios diferentes.',
       '220ml',
       [
-        'Danet e Ninho',
         'Abacaxi e Ninho',
         'Brigadeiro de Nutella e Ninho',
-        'Frutas Vermelhas e Ninho',
-        'Doce de Leite e Coco',
+        'Dois mousses: ninho e chocolate',
       ],
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
     ),
@@ -26,16 +24,32 @@ export class ProductsService {
       'R$ 17,00',
       '',
       '260ml',
-      ['Napolitano', 'Oreo', 'Browninho', 'Biss'],
+      ['Oreo', 'Browninho'],
       'https://i.postimg.cc/4dMHfNXN/copo-supreme.jpg',
     ),
     new Product(
-      'Brownie Individual',
-      'R$ 10,00',
+      'Brownie individual recheado',
+      'R$ 9,00',
       'Brownie com casquinha crocante, cremoso por dentro e recheado com gotas de chocolate.',
       '110g',
-      ['Brigadeiro', 'Doce de leite', 'Brigadeiro de Nutella', 'Maracujá'],
+      ['Doce de leite', 'Brigadeiro'],
       'https://i.postimg.cc/HnycVDL0/brownie.jpg',
+    ),
+    new Product(
+      'Brownie na mini marmita chocolatudo',
+      'R$ 9,00',
+      'Brownie com casquinha crocante, cremoso por dentro e recheado com gotas de chocolate.',
+      '110g',
+      ['Doce de leite', 'Brigadeiro'],
+      'https://i.postimg.cc/65sDv40f/brownie-na-marmita.jpg',
+    ),
+    new Product(
+      'Palha italiana',
+      'R$ 9,00',
+      '',
+      '',
+      [],
+      'https://i.postimg.cc/rscwKQFR/palha-italiana.jpg',
     ),
   ];
 
@@ -46,7 +60,7 @@ export class ProductsService {
       '',
       '2,4l',
       ['Danet e ninho'],
-      '',
+      'https://i.postimg.cc/rsTcjJbG/torta-na-taca.jpg',
     ),
     new Product(
       'Torta na taça',
@@ -54,7 +68,7 @@ export class ProductsService {
       '',
       '2,4l',
       ['Brigadeiro de Nutella e ninho', 'Abacaxi e ninho'],
-      '',
+      'https://i.postimg.cc/Kvv4yGqP/torta-na-taca-abacaxi.jpg',
     ),
     new Product(
       'Torta na taça',
@@ -80,6 +94,75 @@ export class ProductsService {
       [''],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
     ),
+    new Product(
+      'Kit presente da Fabi master',
+      'R$ 179,00',
+      '',
+      '',
+      [
+        'Contém:',
+        '- 4 pães de mel',
+        '- 2 bolos de pote',
+        '- 1 caixa com 6 trufas',
+        '- 1 tortinha compartilhada',
+        '- 2 mix de amendoim',
+        '- 2 Keep cooler',
+      ],
+      'https://i.postimg.cc/VkB8sT7j/kit-master.jpg',
+    ),
+    new Product(
+      'Kit Fabi Premium',
+      'R$ 159,00',
+      'Trufas cremosas feitas com chocolate puro.',
+      '',
+      [
+        'Contém:',
+        '- 2 pães de mel',
+        '- 2 bolos de pote',
+        '- 1 barra de chocolate recheada',
+        '- 1 caixa com 6 trufas',
+        '- 2 brownies',
+        '- 2 Keep cooler',
+        '- 2 mix de amendoim',
+      ],
+      'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
+    ),
+  ];
+
+  private dolceWeekProducts: Product[] = [
+    new Product(
+      'Bolo de pote',
+      'R$ 13,00',
+      'Bolo de massa amanteigada e camadas generosas de dois recheios diferentes.',
+      '220ml',
+      ['Romeu e Julieta', 'Red Velvet com cream cheese'],
+      'https://i.postimg.cc/WbBjFS81/red-velvet.jpg',
+    ),
+    new Product(
+      'Copo Extra Supreme',
+      'R$ 17,00',
+      '',
+      '260ml',
+      ['Kit Kat'],
+      'https://i.postimg.cc/gkXm21v7/copo-semana-dolce.jpg',
+    ),
+    new Product('Bombom de uva no pote', 'R$ 15,00', '', '', [], ''),
+    new Product(
+      'Brownie nutelíssimo',
+      'R$ 9,00',
+      'Brownie com casquinha crocante, cremoso por dentro e recheado com gotas de chocolate.',
+      '110g',
+      [],
+      'https://i.postimg.cc/HnycVDL0/brownie.jpg',
+    ),
+    new Product(
+      'Tortinha compartilhada',
+      'R$ 22,00',
+      '',
+      '',
+      ['Abacaxi e coco', 'Abacaxi e ninho'],
+      'https://i.postimg.cc/XJwK0nL0/tortinha-abacaxi-ninho.jpg',
+    ),
   ];
 
   getTakeOutProducts() {
@@ -88,5 +171,9 @@ export class ProductsService {
 
   getPreOrderProducts() {
     return this.preOrderProducts.slice();
+  }
+
+  getdolceWeekProducts() {
+    return this.dolceWeekProducts.slice();
   }
 }

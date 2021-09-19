@@ -1,7 +1,32 @@
 @import 'src/styles/sass/base.scss';
 
 .container {
-  text-align: left;
+  position: relative;
+
+  .product-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+    margin-bottom: map-get($spacing, large);
+    margin-top: map-get($spacing, medium);
+
+    @media (min-width: $sm) {
+      justify-content: flex-end;
+      position: absolute;
+      top: 28px;
+      right: map-get($spacing, medium);
+      margin-bottom: map-get($spacing, large);
+      margin-top: map-get($spacing, large);
+    }
+
+    .product-image {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 8px;
+    }
+  }
 
   .products-list-item {
     display: flex;
@@ -14,6 +39,8 @@
       font-family: map-get($font-family, secondary);
       font-weight: map-get($font-weight, bold);
       margin-bottom: map-get($spacing, medium);
+      color: $darker-brown;
+      font-size: map-get($font-size, large);
 
       .icon {
         color: $cookie-brown;
@@ -24,12 +51,12 @@
     .product-price {
       font-family: map-get($font-family, primary);
       font-weight: map-get($font-weight, bold);
+      color: $darker-brown;
     }
   }
 
   .product-flavors {
     color: $dark-brown;
-    text-align: left;
 
     p {
       font-family: map-get($font-family, primary);
@@ -45,6 +72,13 @@
       .product-name {
         margin-bottom: 0;
       }
+    }
+  }
+
+  .product-with-image {
+    @media (min-width: $sm) {
+      min-height: 220px;
+      padding-top: 10px;
     }
   }
 }

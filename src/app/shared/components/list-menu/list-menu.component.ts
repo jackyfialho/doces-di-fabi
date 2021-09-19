@@ -10,6 +10,7 @@ import { Product } from 'src/models/products.model';
 export class ListMenuComponent implements OnInit {
   @Input() products: Product[];
   @Input() menu: string;
+  @Input() dolceWeekMonth?: string;
 
   constructor() {}
 

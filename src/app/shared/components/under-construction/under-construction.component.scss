@@ -1,0 +1,35 @@
+@import 'src/styles/sass/base';
+
+.under-construction {
+  padding: map-get($spacing, x-large);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $darker-brown;
+    text-align: center;
+
+    .icon-container {
+      padding: map-get($spacing, medium);
+      margin-bottom: map-get($spacing, large);
+      border: 4px solid $darker-brown;
+      border-radius: 8px;
+    }
+
+    .text-container {
+      h3 {
+        margin-bottom: map-get($spacing, medium);
+        font-family: map-get($font-family, primary);
+        font-weight: map-get($font-weight, bold);
+        font-size: map-get($font-size, xx-large);
+      }
+
+      p {
+        font-size: map-get($font-size, medium);
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import {
   faShippingFast,
   faBoxOpen,
   faCookieBite,
+  faBirthdayCake,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -16,6 +17,7 @@ export class NavigationComponent implements OnInit {
   faShippingFast = faShippingFast;
   faBoxOpen = faBoxOpen;
   faCookieBite = faCookieBite;
+  faBirthdayCake = faBirthdayCake;
 
   constructor() {}
 

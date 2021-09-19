@@ -14,6 +14,9 @@ import { ListMenuSubitemComponent } from './shared/components/list-menu/list-men
 import { TakeOutMenuComponent } from './pages/take-out-menu/take-out-menu.component';
 import { PreOrderMenuComponent } from './pages/pre-order-menu/pre-order-menu.component';
 import { CompleteMenuComponent } from './pages/complete-menu/complete-menu.component';
+import { DolceWeekComponent } from './pages/dolce-week/dolce-week.component';
+import { UnderConstructionComponent } from './shared/components/under-construction/under-construction.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { CompleteMenuComponent } from './pages/complete-menu/complete-menu.compo
     TakeOutMenuComponent,
     PreOrderMenuComponent,
     CompleteMenuComponent,
+    DolceWeekComponent,
+    UnderConstructionComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],

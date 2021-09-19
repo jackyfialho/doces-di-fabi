@@ -10,11 +10,25 @@
     <div class="product-price">{{ product.price }}</div>
   </div>
 
-  <div *ngIf="product.flavors !== ['']" class="product-flavors">
+  <div
+    *ngIf="product.flavors !== ['']"
+    class="product-flavors"
+    [ngClass]="{
+      'product-flavors product-with-image': product.imagePath !== ''
+    }"
+  >
     <app-list-menu-subitem
       *ngFor="let flavorEl of product.flavors; let i = index"
       [itemTitle]="product.flavors[i]"
     ></app-list-menu-subitem>
+  </div>
+
+  <div class="product-image-container" *ngIf="product.imagePath !== ''">
+    <img
+      [attr.src]="product.imagePath"
+      [attr.alt]="product.name"
+      class="product-image"
+    />
   </div>
 
   <hr />

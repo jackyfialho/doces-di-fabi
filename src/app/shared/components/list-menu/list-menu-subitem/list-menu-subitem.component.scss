@@ -9,5 +9,11 @@
 
   .subitem-text {
     padding: map-get($spacing, x-small) 0;
+    text-align: center;
+    font-size: map-get($font-size, medium);
+
+    @media (min-width: $sm) {
+      text-align: left;
+    }
   }
 }

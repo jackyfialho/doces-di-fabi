@@ -33,7 +33,11 @@
       23px 0 20px -23px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(0, 0, 0, 0.1);
 
     .logo-text {
-      margin-left: 38px;
+      margin-left: 50px;
+
+      @media (min-width: $lg) {
+        margin-left: 40px;
+      }
     }
 
     img {
