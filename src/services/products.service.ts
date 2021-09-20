@@ -40,7 +40,7 @@ export class ProductsService {
       'R$ 9,00',
       'Brownie com casquinha crocante, cremoso por dentro e recheado com gotas de chocolate.',
       '110g',
-      ['Doce de leite', 'Brigadeiro'],
+      [],
       'https://i.postimg.cc/65sDv40f/brownie-na-marmita.jpg',
     ),
     new Product(

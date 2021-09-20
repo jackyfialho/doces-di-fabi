@@ -10,7 +10,7 @@ import { CompleteMenuComponent } from './pages/complete-menu/complete-menu.compo
 import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
-  { path: 'doces-di-fabi', component: NavigationComponent },
+  { path: '', component: NavigationComponent },
   { path: 'cardapio-retirada', component: TakeOutMenuComponent },
   { path: 'cardapio-encomendas', component: PreOrderMenuComponent },
   { path: 'semana-dolce', component: DolceWeekComponent },
