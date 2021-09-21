@@ -3,6 +3,8 @@
 .menu-container {
   padding: map-get($spacing, medium);
   text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
 
   @media (min-width: $sm) {
     padding: map-get($spacing, xx-large);

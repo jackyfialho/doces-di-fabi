@@ -84,7 +84,7 @@ export class ProductsService {
       '',
       '2,4l',
       ['Nozes e doce de leite'],
-      '',
+      'https://i.postimg.cc/CxhFXjSh/torta-na-taca-nozes.jpg',
     ),
     new Product(
       'Trufa de chocolate',
