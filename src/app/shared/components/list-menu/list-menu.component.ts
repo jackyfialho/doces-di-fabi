@@ -11,6 +11,7 @@ export class ListMenuComponent implements OnInit {
   @Input() products: Product[];
   @Input() menu: string;
   @Input() dolceWeekMonth?: string;
+  @Input() dolceWeekDays?: string;
 
   constructor() {}
 

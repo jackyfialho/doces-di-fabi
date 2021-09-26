@@ -2,6 +2,12 @@
   <h4 *ngIf="menu === 'takeOut'">Cardápio pronta entrega</h4>
   <h4 *ngIf="menu === 'preOrder'">Cardápio de encomendas</h4>
   <h4 *ngIf="menu === 'dolceWeek'">Semana Dolce - {{ dolceWeekMonth }}</h4>
+  <p *ngIf="dolceWeekDays">
+    Nossa Semana Dolce {{ dolceWeekMonth }} irá acontecer nos dias
+    {{ dolceWeekDays }}. E como vai funcionar? A partir de outubro teremos,
+    todos os meses, uma semana muito especial com doces exclusivos para
+    encomenda! Garantimos que vocês irão amar as novidades!
+  </p>
 
   <div class="products-list">
     <div class="menu-border">

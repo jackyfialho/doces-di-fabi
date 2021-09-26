@@ -3,7 +3,7 @@
 .menu-container {
   padding: map-get($spacing, medium);
   text-align: center;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 
   @media (min-width: $sm) {
@@ -24,6 +24,13 @@
       font-size: map-get($font-size, xx-large);
       max-width: 500px;
     }
+  }
+
+  p {
+    padding: map-get($spacing, xx-large) map-get($spacing, medium) 0
+      map-get($spacing, medium);
+    font-weight: map-get($font-weight, medium);
+    font-size: map-get($font-size, medium);
   }
 
   .products-list {
