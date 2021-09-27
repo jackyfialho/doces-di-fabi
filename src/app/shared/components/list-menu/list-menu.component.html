@@ -1,4 +1,4 @@
-<div class="menu-container">
+<div class="menu-container" id="product-list">
   <h4 *ngIf="menu === 'takeOut'">Cardápio pronta entrega</h4>
   <h4 *ngIf="menu === 'preOrder'">Cardápio de encomendas</h4>
   <h4 *ngIf="menu === 'dolceWeek'">Semana Dolce - {{ dolceWeekMonth }}</h4>
@@ -21,6 +21,7 @@
           src="./assets/img/bolo_menu.png"
           alt="bolo de chocolate"
           width="120px"
+          (click)="convetToPDF(menu)"
         />
       </div>
     </div>
