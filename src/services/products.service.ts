@@ -148,12 +148,12 @@ export class ProductsService {
     ),
     new Product('Bombom de uva no pote', 'R$ 15,00', '', '', [], ''),
     new Product(
-      'Brownie nutelíssimo',
-      'R$ 9,00',
-      'Brownie com casquinha crocante, cremoso por dentro e recheado com gotas de chocolate.',
-      '110g',
+      'Caixa com 4 trufas de Brownie',
+      'R$ 14,00',
+      'Trufas de brownie, cremosas por dentro e com casquinha crocante por fora.',
+      '',
       [],
-      'https://i.postimg.cc/HnycVDL0/brownie.jpg',
+      'https://i.postimg.cc/hjbKJ2XZ/trufa-de-brownie.jpg',
     ),
     new Product(
       'Tortinha compartilhada',
