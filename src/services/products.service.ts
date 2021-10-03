@@ -28,7 +28,7 @@ export class ProductsService {
       'https://i.postimg.cc/4dMHfNXN/copo-supreme.jpg',
     ),
     new Product(
-      'Super Fatia Oreo',
+      'Super Fatia da Fabi',
       'R$ 19,00',
       '',
       '',
@@ -36,8 +36,8 @@ export class ProductsService {
       'https://i.postimg.cc/mZjqjcZD/bolo-oreo.png',
     ),
     new Product(
-      'Trufa de chocolate (unid.)',
-      'R$ 15,00',
+      'Trufa de chocolate',
+      '(unid.) R$ 5,00',
       '',
       '',
       [],
