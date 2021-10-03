@@ -35,6 +35,14 @@ export class ProductsService {
       [],
       'https://i.postimg.cc/mZjqjcZD/bolo-oreo.png',
     ),
+    new Product(
+      'Trufa de chocolate (unid.)',
+      'R$ 15,00',
+      '',
+      '',
+      [],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
+    ),
   ];
 
   private preOrderProducts: Product[] = [
