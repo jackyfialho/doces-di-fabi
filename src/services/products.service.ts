@@ -122,7 +122,7 @@ export class ProductsService {
     ),
     new Product(
       'Trufas de chocolate',
-      '(cento) R$ 180,00',
+      '(cento) R$ 280,00',
       'Nossas trufas podem abrilhantar seu evento! Saborosas e derretem na boca com o gosto inigualável do mais puro chocolate.',
       '35g',
       [],
