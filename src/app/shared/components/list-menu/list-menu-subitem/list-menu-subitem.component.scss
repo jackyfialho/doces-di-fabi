@@ -1,19 +1,22 @@
 @import 'src/styles/sass/base';
 
 .list-menu-subitem {
-  padding-left: 0;
+  padding-left: 20px;
 
-  @media (min-width: $sm) {
-    padding-left: 40px;
-  }
-
-  .subitem-text {
+  .subitem-name {
     padding: map-get($spacing, x-small) 0;
     text-align: center;
     font-size: map-get($font-size, medium);
+    font-weight: map-get($font-weight, medium);
+    font-style: italic;
+    text-decoration: underline;
+    text-align: left;
+  }
 
-    @media (min-width: $sm) {
-      text-align: left;
-    }
+  .subitem-description {
+    padding: map-get($spacing, x-small) map-get($spacing, small)
+      map-get($spacing, medium) 0;
+    font-size: map-get($font-size, small);
+    text-align: justify;
   }
 }

@@ -14,5 +14,7 @@ export class ListMenuItemComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.product.flavors);
+  }
 }

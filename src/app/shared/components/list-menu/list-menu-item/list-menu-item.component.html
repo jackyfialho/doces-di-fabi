@@ -1,34 +1,72 @@
 <div class="container">
-  <div class="products-list-item">
-    <div class="product-name">
+  <div class="row no-gutters">
+    <div
+      class="
+        product-name
+        col-12 col-md-6
+        d-flex
+        justify-content-center justify-content-md-start
+      "
+    >
       <fa-icon class="icon" [icon]="faCookieBite"></fa-icon>
       <span *ngIf="product.weight !== ''; else elseBlock">
         {{ product.name }} - {{ product.weight }}
       </span>
       <ng-template #elseBlock> {{ product.name }}</ng-template>
     </div>
-    <div class="product-price">{{ product.price }}</div>
+    <div
+      class="
+        product-price
+        col-12 col-md-6
+        d-flex
+        justify-content-center justify-content-md-end
+      "
+    >
+      {{ product.price }}
+    </div>
   </div>
 
-  <div
-    *ngIf="product.flavors !== ['']"
-    class="product-flavors"
-    [ngClass]="{
-      'product-flavors product-with-image': product.imagePath !== ''
-    }"
-  >
-    <app-list-menu-subitem
-      *ngFor="let flavorEl of product.flavors; let i = index"
-      [itemTitle]="product.flavors[i]"
-    ></app-list-menu-subitem>
+  <div class="row" *ngIf="product.description">
+    <div class="product-description col-12">
+      {{ product.description }}
+    </div>
   </div>
 
-  <div class="product-image-container" *ngIf="product.imagePath !== ''">
-    <img
-      [attr.src]="product.imagePath"
-      [attr.alt]="product.name"
-      class="product-image"
-    />
+  <div class="row">
+    <div
+      *ngIf="product.flavors.length !== 0"
+      class="
+        product-flavors
+        col-12 col-md-6
+        d-flex
+        flex-column
+        align-items-center
+        justify-content-center
+      "
+      [ngClass]="{
+        'product-flavors product-with-image': product.imagePath !== ''
+      }"
+    >
+      <app-list-menu-subitem
+        *ngFor="let flavorEl of product.flavors; let i = index"
+        [subitem]="product.flavors[i]"
+      ></app-list-menu-subitem>
+    </div>
+
+    <div
+      [ngClass]="
+        product.flavors.length !== 0
+          ? 'product-image-container col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center'
+          : 'product-image-container col-12 d-flex justify-content-center align-items-center'
+      "
+      *ngIf="product.imagePath !== ''"
+    >
+      <img
+        [attr.src]="product.imagePath"
+        [attr.alt]="product.name"
+        class="product-image"
+      />
+    </div>
   </div>
 
   <hr />

@@ -1,3 +1,11 @@
 <div class="list-menu-subitem">
-  <div class="subitem-text">{{ itemTitle }}</div>
+  <div class="subitem-name">
+    {{ subitem.name }}
+    <span *ngIf="subitem.price" class="subitem-price"
+      >- {{ subitem.price }}</span
+    >
+  </div>
+  <div class="subitem-description" *ngIf="subitem.description">
+    {{ subitem.description }}
+  </div>
 </div>
