@@ -43,7 +43,7 @@ export class ProductsService {
       '260ml',
       [
         {
-          name: 'Super Biss',
+          name: 'Duo de Brigadeiro',
           description:
             'Feito com chocolate branco cremoso e nosso delicioso brigadeiro, sendo finalizado com mousse de ninho e pedaços de chocolate.',
         },
