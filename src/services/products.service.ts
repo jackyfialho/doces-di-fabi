@@ -88,7 +88,7 @@ export class ProductsService {
       'Uma generosa fatia gelada de chocolate, com mousse de leite ninho, pedaços do nosso Oreo de brigadeiro cremoso. Uma verdadeira explosão de fatia.',
       '',
       [],
-      'https://i.postimg.cc/mZjqjcZD/bolo-oreo.png',
+      'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
     ),
   ];
 
