@@ -62,7 +62,7 @@ export class ProductsService {
         },
         {
           name: '6 unidades',
-          price: 'R$ 19,90',
+          price: 'R$ 29,90',
         },
         {
           name: 'Individuais',
