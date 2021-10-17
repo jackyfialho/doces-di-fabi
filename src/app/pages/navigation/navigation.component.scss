@@ -4,17 +4,18 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-height: 400px;
+  min-height: 75vh;
   max-width: 100%;
   font-size: map-get($font-size, x-medium);
   padding: map-get($spacing, x-large) 0 0 0;
 
-  background-image: url('../../../assets/img/navigation_bg.jpg');
+  background-image: url('../../../assets/img/navigation_bg_mobile.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $sm) {
+    background-image: url('../../../assets/img/navigation_bg.jpg');
     font-size: map-get($font-size, large);
     width: 100vw;
     height: auto;
@@ -67,7 +68,7 @@
         font-weight: map-get($font-weight, bold);
         min-width: 200px;
         text-align: center;
-        color: $dark-brown;
+        color: $darker-brown;
 
         @media (min-width: $xs) {
           top: 14px;

@@ -11,7 +11,7 @@ import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', component: NavigationComponent },
-  { path: 'cardapio-retirada', component: TakeOutMenuComponent },
+  { path: 'cardapio-pronta-entrega', component: TakeOutMenuComponent },
   { path: 'cardapio-encomendas', component: PreOrderMenuComponent },
   { path: 'semana-dolce', component: DolceWeekComponent },
   { path: 'cardapio-completo', component: CompleteMenuComponent },

@@ -66,8 +66,8 @@ export class ProductsService {
         },
         {
           name: 'Individuais',
-          description: '*apenas para pedidos acima de 5 unidades',
           price: 'R$ 5,90 (cada)*',
+          description: '*apenas para pedidos acima de 5 unidades',
         },
       ],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',

@@ -1,0 +1,68 @@
+@import 'src/styles/sass/base';
+
+.floating-buttons {
+  position: fixed;
+  top: 69vh;
+  right: 2vw;
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  max-width: 80px;
+  padding: map-get($spacing, small);
+  font-weight: map-get($font-weight, bold);
+  color: $light-pink;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 14px;
+
+  @media (min-width: $sm) {
+    padding: map-get($spacing, medium);
+    font-size: 18px;
+    max-width: 300px;
+    top: 85vh;
+    right: 3vw;
+  }
+
+  // @media (min-width: $lg) {
+  //   top: 85vh;
+  // }
+
+  @media (min-width: $xl) {
+    top: 80vh;
+  }
+
+  .links-container {
+    margin-top: map-get($spacing, medium);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $sm) {
+      flex-direction: row;
+    }
+
+    a {
+      cursor: pointer;
+      img {
+        height: 38px;
+        width: 38px;
+
+        @media (min-width: $sm) {
+          height: 42px;
+          width: 42px;
+        }
+      }
+    }
+
+    .instagram {
+      margin-bottom: map-get($spacing, small);
+      cursor: pointer;
+
+      @media (min-width: $sm) {
+        margin-bottom: 0;
+        margin-right: map-get($spacing, medium);
+      }
+    }
+  }
+}
