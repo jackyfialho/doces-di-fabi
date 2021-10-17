@@ -53,7 +53,7 @@ export class ProductsService {
     new Product(
       'Caixa de Trufas',
       'a partir de R$ 19,90',
-      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais! Temos as opções com 4 unidades - R$ 19,90 e com 6 unidades - R$ 29,90. Aceitamos pedidos individuais acima de 10 unidades!',
+      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais! Temos as opções com 4 unidades - R$ 19,90 e com 6 unidades - R$ 29,90. Individuais com pedidos acima de 5 unidades: R$ 5,90 cada!',
       '',
       [],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
