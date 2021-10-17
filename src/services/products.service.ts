@@ -48,14 +48,28 @@ export class ProductsService {
             'Nosso delicioso brigadeiro com mousse aerada de leite ninho! Para os amantes eternos do Oreo.',
         },
       ],
-      'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
+      'https://i.postimg.cc/VkPhyW1M/copo-supreme-oreo.jpg',
     ),
     new Product(
       'Caixa de Trufas',
       'a partir de R$ 19,90',
-      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais! Temos as opções com 4 unidades - R$ 19,90 e com 6 unidades - R$ 29,90. Individuais com pedidos acima de 5 unidades: R$ 5,90 cada!',
+      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais!',
       '',
-      [],
+      [
+        {
+          name: '4 unidades',
+          price: 'R$ 19,90',
+        },
+        {
+          name: '6 unidades',
+          price: 'R$ 19,90',
+        },
+        {
+          name: 'Individuais',
+          description: '*apenas para pedidos acima de 5 unidades',
+          price: 'R$ 5,90 (cada)*',
+        },
+      ],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
     ),
     new Product(

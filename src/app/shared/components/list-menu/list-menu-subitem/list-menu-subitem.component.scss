@@ -2,6 +2,7 @@
 
 .list-menu-subitem {
   padding-left: 20px;
+  padding-bottom: map-get($spacing, medium);
 
   .subitem-name {
     padding: map-get($spacing, x-small) 0;
@@ -14,8 +15,7 @@
   }
 
   .subitem-description {
-    padding: map-get($spacing, x-small) map-get($spacing, small)
-      map-get($spacing, medium) 0;
+    padding: map-get($spacing, x-small) map-get($spacing, small) 0 0;
     font-size: map-get($font-size, small);
     text-align: justify;
   }
