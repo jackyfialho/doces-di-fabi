@@ -28,11 +28,6 @@ export class ProductsService {
           description:
             'Geleia de frutas vermelhas com pedaços da fruta e a cremosidade especial de uma geleia perfeita, acompanhada de nossa deliciosa mousse aerada de ninho.',
         },
-        {
-          name: 'Danet da Fabi',
-          description:
-            'Delicioso creme de Danet, que nos remete a momentos únicos, acompanhado da nossa massa especial mousse de leite ninho. Simplesmente o puro sabor do chocolate.',
-        },
       ],
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
     ),
@@ -45,20 +40,20 @@ export class ProductsService {
         {
           name: 'Duo de Brigadeiro',
           description:
-            'Feito com chocolate branco cremoso e nosso delicioso brigadeiro, sendo finalizado com mousse de ninho e pedaços de chocolate.',
+            'Feito com nosso delicioso brigadeiro tradicional e brigadeiro 4 leites! Finalizamos com o preferido de todos: brigadeiros gourmet! Você merece essa delícia!',
         },
         {
-          name: 'Surpresa de Uva',
+          name: 'Oreo',
           description:
-            'Uvas selecionadas acompanhadas de mousse de leite ninho, nosso delicioso creme de Danet e pedaços de chocolate.',
+            'Nosso delicioso brigadeiro com mousse aerada de leite ninho! Para os amantes eternos do Oreo.',
         },
       ],
-      'https://i.postimg.cc/4dMHfNXN/copo-supreme.jpg',
+      'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
     ),
     new Product(
       'Caixa de Trufas',
-      'R$ 19,90',
-      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais! Temos opções a partir de 4 unidades.',
+      'a partir de R$ 19,90',
+      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais! Temos as opções com 4 unidades - R$ 19,90 e com 6 unidades - R$ 29,90. Aceitamos pedidos individuais acima de 10 unidades!',
       '',
       [],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
