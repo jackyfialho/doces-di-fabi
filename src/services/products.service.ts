@@ -109,6 +109,12 @@ export class ProductsService {
       '2,4l',
       [
         {
+          name: 'Abacaxi com ninho',
+          description:
+            'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
+          price: 'R$ 219,00',
+        },
+        {
           name: 'Danet da Fabi',
           description:
             'Uma sobremesa para toda a família! Feita com uma deliciosa massa de bolo, nosso Danet especial e mousse aerada de leite ninho. Além de brigadeiros para decorar!',
