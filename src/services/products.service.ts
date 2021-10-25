@@ -99,6 +99,22 @@ export class ProductsService {
       [],
       'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
     ),
+    new Product(
+      'Delicioso bolo Piscina da Fabi!*',
+      'R$ 79,00',
+      'Versão cenoura e chocolate! Bolo macio! Perfeito pra uma café da tarde cheio de sabor, coberto com ganasche de chocolate! *Pedir com 2 (dois) dias de antecedência!',
+      '800g',
+      [],
+      'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
+    ),
+    new Product(
+      'Caserinho de cenoura  e chocolate!*',
+      'R$ 25,90',
+      'Sabor que só a Fabi faz! *Pedir com 2 (dois) dias de antecedência!',
+      '350g',
+      [],
+      'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
+    ),
   ];
 
   private preOrderProducts: Product[] = [
@@ -134,6 +150,39 @@ export class ProductsService {
         },
       ],
       'https://i.postimg.cc/rsTcjJbG/torta-na-taca.jpg',
+    ),
+    new Product(
+      'Torta na taça',
+      '',
+      '',
+      '1,25l',
+      [
+        {
+          name: 'Abacaxi com ninho',
+          description:
+            'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
+          price: 'R$ 110,00',
+        },
+        {
+          name: 'Danet da Fabi',
+          description:
+            'Uma sobremesa para toda a família! Feita com uma deliciosa massa de bolo, nosso Danet especial e mousse aerada de leite ninho. Além de brigadeiros para decorar!',
+          price: 'R$ 110,00',
+        },
+        {
+          name: 'Brigadeiríssima de Nutella',
+          description:
+            'Torta feita com o verdadeiro brigadeiro de Nutella que só a Fabi faz pra sua família! Vocês merecem experimentar e se deliciar! Nossa mousse aerada faz toda a diferença nessa torta!',
+          price: 'R$ 130,00',
+        },
+        {
+          name: 'Red Velvet com Cream Cheese',
+          description:
+            'Massa aveludada com sabor super especial, acompanhada de um delicioso recheio premium de Cream Cheese e mousse de leite ninho! Se surpreeenda com essa combinação!',
+          price: 'R$ 150,00',
+        },
+      ],
+      'https://i.postimg.cc/CxhFXjSh/torta-na-taca-nozes.jpg',
     ),
     new Product(
       'Trufas de chocolate',
