@@ -73,25 +73,6 @@ export class ProductsService {
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
     ),
     new Product(
-      'Pão de Mel',
-      '(unid.) R$ 7,90',
-      '',
-      '80g',
-      [
-        {
-          name: 'Doce de Leite',
-          description:
-            'Recheado com um cremoso doce de leite e banhado no chocolate. Você vai se surpreender com esse sabor.',
-        },
-        {
-          name: 'Nuteludo da Fabi',
-          description:
-            'Generosamente recheado de Nutella e banhado e nosso delicioso chocolate. Não dá pra comer um só!',
-        },
-      ],
-      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
-    ),
-    new Product(
       'Super Fatia da Fabi',
       'R$ 19,00',
       'Uma generosa fatia gelada de chocolate, com mousse de leite ninho, pedaços do nosso Oreo de brigadeiro cremoso. Uma verdadeira explosão de fatia.',
@@ -115,6 +96,25 @@ export class ProductsService {
       [],
       'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
     ),
+    new Product(
+      'Tortinha compartilhada',
+      'R$ 25,00',
+      '',
+      '',
+      [
+        {
+          name: 'Red Velvet',
+          description:
+            'Massa aveludada, delicioso recheio de creme chesse com nossa mousse aerada de ninho.',
+        },
+        {
+          name: 'Abacaxi e cocada cremosa',
+          description:
+            'Você merece experimentar essa cocada da Fabi! Uma delícia que derrete na boca e uma farofinha de biscoito crocante!',
+        },
+      ],
+      'https://i.postimg.cc/59zLvDyQ/torta-compartilhada-abacaxi.jpg',
+    ),
   ];
 
   private preOrderProducts: Product[] = [
@@ -122,71 +122,43 @@ export class ProductsService {
       'Torta na taça',
       '',
       '',
-      '2,4l',
+      '1100g',
       [
         {
           name: 'Abacaxi com ninho',
           description:
             'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
-          price: 'R$ 219,00',
+          price: 'R$ 150,00',
         },
         {
           name: 'Danet da Fabi',
           description:
             'Uma sobremesa para toda a família! Feita com uma deliciosa massa de bolo, nosso Danet especial e mousse aerada de leite ninho. Além de brigadeiros para decorar!',
-          price: 'R$ 220,00',
+          price: 'R$ 150,00',
         },
         {
           name: 'Brigadeiríssima de Nutella',
           description:
             'Torta feita com o verdadeiro brigadeiro de Nutella que só a Fabi faz pra sua família! Vocês merecem experimentar e se deliciar! Nossa mousse aerada faz toda a diferença nessa torta!',
-          price: 'R$ 230,00',
+          price: 'R$ 220,00',
         },
         {
           name: 'Red Velvet com Cream Cheese',
           description:
             'Massa aveludada com sabor super especial, acompanhada de um delicioso recheio premium de Cream Cheese e mousse de leite ninho! Se surpreeenda com essa combinação!',
-          price: 'R$ 250,00',
+          price: 'R$ 160,00',
+        },
+        {
+          name: '',
+          description: 'FOTO ILUSTRATIVA',
+          price: '',
         },
       ],
       'https://i.postimg.cc/rsTcjJbG/torta-na-taca.jpg',
     ),
     new Product(
-      'Torta na taça',
-      '',
-      '',
-      '1,25l',
-      [
-        {
-          name: 'Abacaxi com ninho',
-          description:
-            'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
-          price: 'R$ 110,00',
-        },
-        {
-          name: 'Danet da Fabi',
-          description:
-            'Uma sobremesa para toda a família! Feita com uma deliciosa massa de bolo, nosso Danet especial e mousse aerada de leite ninho. Além de brigadeiros para decorar!',
-          price: 'R$ 110,00',
-        },
-        {
-          name: 'Brigadeiríssima de Nutella',
-          description:
-            'Torta feita com o verdadeiro brigadeiro de Nutella que só a Fabi faz pra sua família! Vocês merecem experimentar e se deliciar! Nossa mousse aerada faz toda a diferença nessa torta!',
-          price: 'R$ 130,00',
-        },
-        {
-          name: 'Red Velvet com Cream Cheese',
-          description:
-            'Massa aveludada com sabor super especial, acompanhada de um delicioso recheio premium de Cream Cheese e mousse de leite ninho! Se surpreeenda com essa combinação!',
-          price: 'R$ 150,00',
-        },
-      ],
-      'https://i.postimg.cc/CxhFXjSh/torta-na-taca-nozes.jpg',
-    ),
-    new Product(
       'Trufas de chocolate',
-      '(cento) R$ 280,00',
+      '(cento) R$ 290,00',
       'Nossas trufas podem abrilhantar seu evento! Saborosas e derretem na boca com o gosto inigualável do mais puro chocolate.',
       '35g',
       [],
@@ -212,6 +184,30 @@ export class ProductsService {
         },
       ],
       'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
+    ),
+    new Product(
+      'Pão de Mel*',
+      '(unid.) R$ 7,90',
+      '',
+      '80g',
+      [
+        {
+          name: 'Doce de Leite',
+          description:
+            'Recheado com um cremoso doce de leite e banhado no chocolate. Você vai se surpreender com esse sabor.',
+        },
+        {
+          name: 'Nuteludo da Fabi',
+          description:
+            'Generosamente recheado de Nutella e banhado e nosso delicioso chocolate. Não dá pra comer um só!',
+        },
+        {
+          name: '',
+          description:
+            '*Todos os sabores: pedido mínimo a partir de 10 unidades.',
+        },
+      ],
+      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
     ),
   ];
 
