@@ -14,6 +14,10 @@
     10h às 15h, conforme disponibilidade.
   </p>
 
+  <p *ngIf="menu === 'preOrder'">
+    Pedidos com 2 (dois) dias de antecedência.
+  </p>
+
   <div class="products-list">
     <div class="menu-border">
       <app-list-menu-item

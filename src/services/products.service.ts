@@ -81,17 +81,17 @@ export class ProductsService {
     //   'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
     // ),
     // new Product(
-    //   'Delicioso bolo Piscina da Fabi!*',
+    //   'Delicioso bolo Piscina da Fabi!',
     //   'R$ 79,00',
-    //   'Versão cenoura e chocolate! Bolo macio! Perfeito pra uma café da tarde cheio de sabor, coberto com ganasche de chocolate! *Pedir com 2 (dois) dias de antecedência!',
+    //   'Versão cenoura e chocolate! Bolo macio! Perfeito pra uma café da tarde cheio de sabor, coberto com ganasche de chocolate!',
     //   '800g',
     //   [],
     //   'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
     // ),
     // new Product(
-    //   'Caserinho de cenoura  e chocolate!*',
+    //   'Caserinho de cenoura  e chocolate!',
     //   'R$ 25,90',
-    //   'Sabor que só a Fabi faz! *Pedir com 2 (dois) dias de antecedência!',
+    //   'Sabor que só a Fabi faz!',
     //   '350g',
     //   [],
     //   'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
@@ -151,11 +151,23 @@ export class ProductsService {
 
   private preOrderProducts: Product[] = [
     new Product(
-      'Torta na taça',
-      'a partir de R$ 80,00',
-      'Tamanho P - R$ 80,00. Tamanho G - R$ 150,00',
-      '1100g',
+      'Torta na travessa',
+      '',
+      '',
+      '',
       [
+        {
+          name: 'Tamanho P',
+          description:
+            '',
+          price: 'R$ 80,00',
+        },
+        {
+          name: 'Tamanho G',
+          description:
+            '',
+          price: 'R$ 150,00',
+        },
         {
           name: 'Abacaxi com ninho',
           description:
@@ -213,8 +225,8 @@ export class ProductsService {
       'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
     ),
     new Product(
-      'Bombom de morango*',
-      'R$ 80,00',
+      'Bombom de morango',
+      '',
       'Nossa mousse aerada de leite ninho com morangos e ganasche de chocolate.',
       'aprox. 1100g',
       [
@@ -225,19 +237,14 @@ export class ProductsService {
         },
         {
           name: 'Tamanho G',
-          description: 'Serve até 15 (quinze) pessoas.',
+          description: 'Serve até 12 (doze) pessoas.',
           price: 'R$ 150,00',
-        },
-        {
-          name: '',
-          description: ' *Pedido com 2 (dois) dias de antecedência.',
-          price: '',
         },
       ],
       'https://i.postimg.cc/RZw6SgKp/bombom-morango.jpg',
     ),
     new Product(
-      'Surpresa de uva*',
+      'Surpresa de uva',
       '',
       'Creme de leite ninho com uvas selecionadas, ganasche de chocolate meio amargo e nosso maravilhos brownie chocolatudo.',
       'aprox. 1100g',
@@ -249,13 +256,8 @@ export class ProductsService {
         },
         {
           name: 'Tamanho G',
-          description: 'Serve até 15 (quinze) pessoas.',
+          description: 'Serve até 12 (doze) pessoas.',
           price: 'R$ 150,00',
-        },
-        {
-          name: '',
-          description: ' *Pedido com 2 (dois) dias de antecedência.',
-          price: '',
         },
       ],
       'https://i.postimg.cc/rwTWr6V2/supresa-uva.jpg',
