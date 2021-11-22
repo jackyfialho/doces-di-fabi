@@ -72,30 +72,30 @@ export class ProductsService {
       ],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
     ),
-    new Product(
-      'Super Fatia da Fabi',
-      'R$ 19,00',
-      'Uma generosa fatia gelada de chocolate, com mousse de leite ninho, pedaços do nosso Oreo de brigadeiro cremoso. Uma verdadeira explosão de fatia.',
-      '',
-      [],
-      'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
-    ),
-    new Product(
-      'Delicioso bolo Piscina da Fabi!*',
-      'R$ 79,00',
-      'Versão cenoura e chocolate! Bolo macio! Perfeito pra uma café da tarde cheio de sabor, coberto com ganasche de chocolate! *Pedir com 2 (dois) dias de antecedência!',
-      '800g',
-      [],
-      'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
-    ),
-    new Product(
-      'Caserinho de cenoura  e chocolate!*',
-      'R$ 25,90',
-      'Sabor que só a Fabi faz! *Pedir com 2 (dois) dias de antecedência!',
-      '350g',
-      [],
-      'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
-    ),
+    // new Product(
+    //   'Super Fatia da Fabi',
+    //   'R$ 19,00',
+    //   'Uma generosa fatia gelada de chocolate, com mousse de leite ninho, pedaços do nosso Oreo de brigadeiro cremoso. Uma verdadeira explosão de fatia.',
+    //   '',
+    //   [],
+    //   'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
+    // ),
+    // new Product(
+    //   'Delicioso bolo Piscina da Fabi!*',
+    //   'R$ 79,00',
+    //   'Versão cenoura e chocolate! Bolo macio! Perfeito pra uma café da tarde cheio de sabor, coberto com ganasche de chocolate! *Pedir com 2 (dois) dias de antecedência!',
+    //   '800g',
+    //   [],
+    //   'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
+    // ),
+    // new Product(
+    //   'Caserinho de cenoura  e chocolate!*',
+    //   'R$ 25,90',
+    //   'Sabor que só a Fabi faz! *Pedir com 2 (dois) dias de antecedência!',
+    //   '350g',
+    //   [],
+    //   'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
+    // ),
     new Product(
       'Tortinha compartilhada',
       'R$ 25,00',
@@ -115,46 +115,73 @@ export class ProductsService {
       ],
       'https://i.postimg.cc/59zLvDyQ/torta-compartilhada-abacaxi.jpg',
     ),
+    new Product(
+      'Pão de Mel*',
+      '(unid.) R$ 7,90',
+      '',
+      '80g',
+      [
+        {
+          name: 'Doce de Leite',
+          description:
+            'Recheado com um cremoso doce de leite e banhado no chocolate. Você vai se surpreender com esse sabor.',
+        },
+        {
+          name: 'Nuteludo da Fabi',
+          description:
+            'Generosamente recheado de Nutella e banhado e nosso delicioso chocolate. Não dá pra comer um só!',
+        },
+        {
+          name: '',
+          description:
+            '*Todos os sabores: pedido mínimo a partir de 10 unidades.',
+        },
+      ],
+      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
+    ),
+    new Product(
+      'Brownie recheado de brigadeiro',
+      '(porção individual) R$ 10,00',
+      'O melhor brownie só a Fabi tem! E ele vem recheado de brigadeiro gourmet!',
+      '',
+      [],
+      'https://i.postimg.cc/J7bzBsGt/brownie-brigadeiro.jpg',
+    ),
   ];
 
   private preOrderProducts: Product[] = [
     new Product(
       'Torta na taça',
-      '',
-      '',
+      'a partir de R$ 80,00',
+      'Tamanho P - R$ 80,00. Tamanho G - R$ 150,00',
       '1100g',
       [
         {
           name: 'Abacaxi com ninho',
           description:
             'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
-          price: 'R$ 150,00',
+          price: '',
         },
         {
           name: 'Danet da Fabi',
           description:
             'Uma sobremesa para toda a família! Feita com uma deliciosa massa de bolo, nosso Danet especial e mousse aerada de leite ninho. Além de brigadeiros para decorar!',
-          price: 'R$ 150,00',
+          price: '',
         },
         {
           name: 'Brigadeiríssima de Nutella',
           description:
             'Torta feita com o verdadeiro brigadeiro de Nutella que só a Fabi faz pra sua família! Vocês merecem experimentar e se deliciar! Nossa mousse aerada faz toda a diferença nessa torta!',
-          price: 'R$ 220,00',
+          price: '',
         },
         {
           name: 'Red Velvet com Cream Cheese',
           description:
             'Massa aveludada com sabor super especial, acompanhada de um delicioso recheio premium de Cream Cheese e mousse de leite ninho! Se surpreeenda com essa combinação!',
-          price: 'R$ 160,00',
-        },
-        {
-          name: '',
-          description: 'FOTO ILUSTRATIVA',
           price: '',
         },
       ],
-      'https://i.postimg.cc/rsTcjJbG/torta-na-taca.jpg',
+      'https://i.postimg.cc/CKDW6qyq/nova-taca.jpgg',
     ),
     new Product(
       'Trufas de chocolate',
@@ -186,28 +213,52 @@ export class ProductsService {
       'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
     ),
     new Product(
-      'Pão de Mel*',
-      '(unid.) R$ 7,90',
-      '',
-      '80g',
+      'Bombom de morango*',
+      'R$ 80,00',
+      'Nossa mousse aerada de leite ninho com morangos e ganasche de chocolate.',
+      'aprox. 1100g',
       [
         {
-          name: 'Doce de Leite',
-          description:
-            'Recheado com um cremoso doce de leite e banhado no chocolate. Você vai se surpreender com esse sabor.',
+          name: 'Tamanho P',
+          description: 'Serve até 6 (seis) pessoas.',
+          price: 'R$ 80,00',
         },
         {
-          name: 'Nuteludo da Fabi',
-          description:
-            'Generosamente recheado de Nutella e banhado e nosso delicioso chocolate. Não dá pra comer um só!',
+          name: 'Tamanho G',
+          description: 'Serve até 15 (quinze) pessoas.',
+          price: 'R$ 150,00',
         },
         {
           name: '',
-          description:
-            '*Todos os sabores: pedido mínimo a partir de 10 unidades.',
+          description: ' *Pedido com 2 (dois) dias de antecedência.',
+          price: '',
         },
       ],
-      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
+      'https://i.postimg.cc/RZw6SgKp/bombom-morango.jpg',
+    ),
+    new Product(
+      'Surpresa de uva*',
+      '',
+      'Creme de leite ninho com uvas selecionadas, ganasche de chocolate meio amargo e nosso maravilhos brownie chocolatudo.',
+      'aprox. 1100g',
+      [
+        {
+          name: 'Tamanho P',
+          description: 'Serve até 6 (seis) pessoas.',
+          price: 'R$ 80,00',
+        },
+        {
+          name: 'Tamanho G',
+          description: 'Serve até 15 (quinze) pessoas.',
+          price: 'R$ 150,00',
+        },
+        {
+          name: '',
+          description: ' *Pedido com 2 (dois) dias de antecedência.',
+          price: '',
+        },
+      ],
+      'https://i.postimg.cc/rwTWr6V2/supresa-uva.jpg',
     ),
   ];
 
