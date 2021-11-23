@@ -157,18 +157,6 @@ export class ProductsService {
       '',
       [
         {
-          name: 'Tamanho P',
-          description:
-            '',
-          price: 'R$ 80,00',
-        },
-        {
-          name: 'Tamanho G',
-          description:
-            '',
-          price: 'R$ 150,00',
-        },
-        {
           name: 'Abacaxi com ninho',
           description:
             'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
@@ -229,18 +217,7 @@ export class ProductsService {
       '',
       'Nossa mousse aerada de leite ninho com morangos e ganasche de chocolate.',
       'aprox. 1100g',
-      [
-        {
-          name: 'Tamanho P',
-          description: 'Serve até 6 (seis) pessoas.',
-          price: 'R$ 80,00',
-        },
-        {
-          name: 'Tamanho G',
-          description: 'Serve até 12 (doze) pessoas.',
-          price: 'R$ 150,00',
-        },
-      ],
+      [],
       'https://i.postimg.cc/RZw6SgKp/bombom-morango.jpg',
     ),
     new Product(
@@ -248,18 +225,7 @@ export class ProductsService {
       '',
       'Creme de leite ninho com uvas selecionadas, ganasche de chocolate meio amargo e nosso maravilhos brownie chocolatudo.',
       'aprox. 1100g',
-      [
-        {
-          name: 'Tamanho P',
-          description: 'Serve até 6 (seis) pessoas.',
-          price: 'R$ 80,00',
-        },
-        {
-          name: 'Tamanho G',
-          description: 'Serve até 12 (doze) pessoas.',
-          price: 'R$ 150,00',
-        },
-      ],
+      [],
       'https://i.postimg.cc/rwTWr6V2/supresa-uva.jpg',
     ),
   ];
