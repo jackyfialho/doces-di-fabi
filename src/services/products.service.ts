@@ -141,7 +141,7 @@ export class ProductsService {
     ),
     new Product(
       'Brownie recheado de brigadeiro',
-      '(porção individual) R$ 10,00',
+      '(porção individual) R$ 12,00',
       'O melhor brownie só a Fabi tem! E ele vem recheado de brigadeiro gourmet!',
       '',
       [],
