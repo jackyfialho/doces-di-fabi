@@ -14,6 +14,6 @@ export class DolceWeekComponent implements OnInit {
   constructor(private productsService: ProductsService) {}
 
   ngOnInit(): void {
-    this.dolceWeekProducts = this.productsService.getdolceWeekProducts();
+    this.dolceWeekProducts = this.productsService.getDolceWeekProducts();
   }
 }

@@ -2,6 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
+import {
+  faCandyCane
+} from '@fortawesome/free-solid-svg-icons';
+
 import { Product } from 'src/models/products.model';
 
 @Component({
@@ -14,6 +18,7 @@ export class ListMenuComponent implements OnInit {
   @Input() menu: string = '';
   @Input() dolceWeekMonth?: string;
   @Input() dolceWeekDays?: string;
+  faCandyCane = faCandyCane;
 
   divToConvert = 'product-list';
 

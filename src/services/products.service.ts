@@ -232,6 +232,94 @@ export class ProductsService {
 
   private dolceWeekProducts: Product[] = [];
 
+  private christmasProducts: Product[] = [
+    new Product(
+      'Torta na travessa',
+      '',
+      '',
+      '',
+      [
+        {
+          name: 'Pavê da Fabi',
+          description:
+            'Creme quatro leites com frutas selecionadas de qualidade: morango, pêssego em calda e kiwi. Você vai se surpreender com a cremosidade e frescor!',
+          price: '',
+        },
+        {
+          name: 'Red Velvet com Cream Cheese',
+          description:
+            'Massa aveludada com sabor super especial, acompanhada de um delicioso recheio premium de Cream Cheese e mousse de leite ninho! Se surpreeenda com essa combinação!',
+          price: '',
+        },
+        {
+          name: 'Nutelíssima',
+          description:
+            'Brigadeiro original de Nutella, incomparável mousse de ninho, decorada com deliciosos brigadeiros da Fabi!',
+          price: '',
+        },
+        {
+          name: 'Bombom de Morango',
+          description:
+            'Mousse aerada de leite ninho com uma deliciosa mousse de chocolate e morangos! Acompanhada de uma farofinha crocante de biscoitos banhados no chocolate!',
+          price: '',
+        }
+      ],
+      'https://i.postimg.cc/bvMxyb2b/pave-da-fabi.jpg',
+    ),
+    new Product(
+      'Chocotone',
+      '',
+      '',
+      '',
+      [
+        {
+          name: 'Brigaderudo',
+          description: 'Chocotone todo recheado e decorado com nosso brigadeiro gourmet! De dar água na boca!',
+          price: 'R$ 95,00',
+        },
+        {
+          name: 'Prestígio',
+          description: 'Chocotone com a melhor combinação: brigadeiro e cocada! Sabores incomparáveis.',
+          price: 'R$ 95,00',
+        },
+        {
+          name: 'Nutelludo',
+          description: 'Chocotone recheado de original Nutella e brigadeiro de leite ninho.',
+          price: 'R$ 110,00',
+        },
+
+      ],
+      'https://i.postimg.cc/wxXpSRMb/chocotone-fabi.jpg',
+    ),
+    new Product(
+      'Trufas',
+      '',
+      'Nossas trufas podem abrilhantar seu evento! Saborosas e derretem na boca com o gosto inigualável do mais puro chocolate.',
+      '35g',
+      [
+        {
+          name: 'Caixa com 6',
+          description: '',
+          price: 'R$ 30,00',
+        },
+        {
+          name: 'Caixa com 12',
+          description: '',
+          price: 'R$ 80,00',
+        },
+      ],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
+    ),
+    new Product(
+      'Trufa no Pote',
+      'R$ 70,00',
+      'Uma lembrança para encantar! Trufa cremosa sabor dois amores no pote!',
+      '230g',
+      [],
+      'https://i.postimg.cc/SsqnhF6B/trufa-no-pote.jpg',
+    ),
+  ];
+
   getTakeOutProducts() {
     return this.takeOutProducts.slice();
   }
@@ -240,7 +328,11 @@ export class ProductsService {
     return this.preOrderProducts.slice();
   }
 
-  getdolceWeekProducts() {
+  getDolceWeekProducts() {
     return this.dolceWeekProducts.slice();
+  }
+
+  getChristmasProducts() {
+    return this.christmasProducts.slice();
   }
 }

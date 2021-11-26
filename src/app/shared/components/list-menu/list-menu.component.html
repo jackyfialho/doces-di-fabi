@@ -3,6 +3,11 @@
   <h4 *ngIf="menu === 'takeOut'">Cardápio pronta entrega</h4>
   <h4 *ngIf="menu === 'preOrder'">Cardápio de encomendas</h4>
   <h4 *ngIf="menu === 'dolceWeek'">Semana Dolce - {{ dolceWeekMonth }}</h4>
+  <h4 *ngIf="menu === 'christmas'" class="christmas">
+    <fa-icon class="icon" [icon]="faCandyCane" size="1x"></fa-icon>
+    Cardápio de Natal
+    <fa-icon class="icon" [icon]="faCandyCane" size="1x"></fa-icon>
+  </h4>
   <p *ngIf="dolceWeekDays">
     Nossa Semana Dolce {{ dolceWeekMonth }} irá acontecer nos dias
     {{ dolceWeekDays }}. E como vai funcionar? A partir de outubro teremos,
@@ -21,6 +26,14 @@
     Tamanho G: peso aproximado 1,800gr, serve até 12 pessoas - R$ 150,00
   </p>
 
+  <p *ngIf="menu === 'christmas'">
+    Tortas: <br />
+    Tamanho P: peso aproximado 1,100g, serve até 5 pessoas - R$ 80,00 <br />
+    Tamanho G: peso aproximado 1,800gr, serve até 12 pessoas - R$ 150,00<br /><br />
+    Reservas até dia 17/12 | Pagamento antecipado (50%)
+
+  </p>
+
   <div class="products-list">
     <div class="menu-border">
       <app-list-menu-item
@@ -28,11 +41,20 @@
         [product]="productEl"
       ></app-list-menu-item>
 
-      <div class="menu-img">
+      <div class="menu-img" *ngIf="menu !== 'christmas'">
         <img
           src="./assets/img/bolo_menu.png"
           alt="bolo de chocolate"
           width="120px"
+          (click)="convetToPDF(menu)"
+        />
+      </div>
+
+      <div class="menu-img" *ngIf="menu === 'christmas'">
+        <img
+          src="./assets/img/menu_natal.png"
+          alt="doce bengala de natal"
+          width="90px"
           (click)="convetToPDF(menu)"
         />
       </div>

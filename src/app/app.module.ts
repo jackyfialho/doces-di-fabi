@@ -18,6 +18,7 @@ import { DolceWeekComponent } from './pages/dolce-week/dolce-week.component';
 import { UnderConstructionComponent } from './shared/components/under-construction/under-construction.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FloatingButtonsComponent } from './shared/components/floating-buttons/floating-buttons.component';
+import { ChristmasMenuComponent } from './pages/christmas-menu/christmas-menu.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FloatingButtonsComponent } from './shared/components/floating-buttons/f
     UnderConstructionComponent,
     AboutComponent,
     FloatingButtonsComponent,
+    ChristmasMenuComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],

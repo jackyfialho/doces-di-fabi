@@ -26,6 +26,17 @@
     }
   }
 
+  .christmas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      color: red;
+      margin: 0 16px;
+    }
+  }
+
   p {
     padding: map-get($spacing, xx-large) map-get($spacing, medium) 0
       map-get($spacing, medium);
