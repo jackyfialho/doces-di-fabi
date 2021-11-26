@@ -252,6 +252,12 @@ export class ProductsService {
           price: '',
         },
         {
+          name: 'Abacaxi e cocada',
+          description:
+            'Bolo branco e macio, creme branco com generosos pedaços de abacaxi e a cocada da Fabi que você nunca viu igual!',
+          price: '',
+        },
+        {
           name: 'Nutelíssima',
           description:
             'Brigadeiro original de Nutella, incomparável mousse de ninho, decorada com deliciosos brigadeiros da Fabi!',
