@@ -52,21 +52,21 @@ export class ProductsService {
     ),
     new Product(
       'Caixa de Trufas',
-      'a partir de R$ 19,90',
+      'a partir de R$ 22,90',
       'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais!',
       '',
       [
         {
           name: '4 unidades',
-          price: 'R$ 19,90',
+          price: 'R$ 22,90',
         },
         {
           name: '6 unidades',
-          price: 'R$ 29,90',
+          price: 'R$ 32,90',
         },
         {
           name: 'Individuais',
-          price: 'R$ 5,90 (cada)*',
+          price: 'R$ 7,00 (cada)*',
           description: '*apenas para pedidos acima de 5 unidades',
         },
       ],
@@ -80,14 +80,14 @@ export class ProductsService {
     //   [],
     //   'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
     // ),
-    // new Product(
-    //   'Delicioso bolo Piscina da Fabi!',
-    //   'R$ 79,00',
-    //   'Versão cenoura e chocolate! Bolo macio! Perfeito pra uma café da tarde cheio de sabor, coberto com ganasche de chocolate!',
-    //   '800g',
-    //   [],
-    //   'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
-    // ),
+    new Product(
+      'Bolo Piscina da Fabi!',
+      'R$ 79,00',
+      'Versão cenoura e chocolate! Coberto com uma deliciosa Ganasche de chocolate meio amargo! As duas versões são de dar água na boca! Peça o seu com 2 (dois) dias de antecedência!',
+      '800g',
+      [],
+      'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
+    ),
     // new Product(
     //   'Caserinho de cenoura  e chocolate!',
     //   'R$ 25,90',
@@ -107,13 +107,13 @@ export class ProductsService {
           description:
             'Massa aveludada, delicioso recheio de creme chesse com nossa mousse aerada de ninho.',
         },
-        {
-          name: 'Abacaxi e cocada cremosa',
-          description:
-            'Você merece experimentar essa cocada da Fabi! Uma delícia que derrete na boca e uma farofinha de biscoito crocante!',
-        },
+        // {
+        //   name: 'Abacaxi e cocada cremosa',
+        //   description:
+        //     'Você merece experimentar essa cocada da Fabi! Uma delícia que derrete na boca e uma farofinha de biscoito crocante!',
+        // },
       ],
-      'https://i.postimg.cc/59zLvDyQ/torta-compartilhada-abacaxi.jpg',
+      'https://i.postimg.cc/Bbv1X7YD/torta-compartilhada-red-velvet.jpg',
     ),
     new Product(
       'Pão de Mel*',
@@ -185,7 +185,7 @@ export class ProductsService {
     ),
     new Product(
       'Trufas de chocolate',
-      '(cento) R$ 290,00',
+      '(cento) R$ 350,00',
       'Nossas trufas podem abrilhantar seu evento! Saborosas e derretem na boca com o gosto inigualável do mais puro chocolate.',
       '35g',
       [],
@@ -201,13 +201,13 @@ export class ProductsService {
           name: 'Kit Master',
           description:
             'Contém: 4 pães de mel, 2 bolos de pote, 1 caixa com 6 trufas de chocolate, 1 copo supreme, 2 mix de amendoim, 2 keep cooler e 1 caserinho de cenoura e chocolate.',
-          price: 'R$ 179,00',
+          price: 'R$ 194,00',
         },
         {
           name: 'Kit Premium',
           description:
             'Contém: 2 pães de mel, 2 bolos de pote, 1 barra de chocolate, 1 caixa com 4 trufas de chocolate, 2 mix de amendoim, 2 keep cooler e 1 caserinho de chocolate.',
-          price: 'R$ 159,00',
+          price: 'R$ 174,00',
         },
       ],
       'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
@@ -268,7 +268,7 @@ export class ProductsService {
           description:
             'Mousse aerada de leite ninho com uma deliciosa mousse de chocolate e morangos! Acompanhada de uma farofinha crocante de biscoitos banhados no chocolate!',
           price: '',
-        }
+        },
       ],
       'https://i.postimg.cc/bvMxyb2b/pave-da-fabi.jpg',
     ),
@@ -280,20 +280,22 @@ export class ProductsService {
       [
         {
           name: 'Brigaderudo',
-          description: 'Chocotone todo recheado e decorado com nosso brigadeiro gourmet! De dar água na boca!',
+          description:
+            'Chocotone todo recheado e decorado com nosso brigadeiro gourmet! De dar água na boca!',
           price: 'R$ 95,00',
         },
         {
           name: 'Prestígio',
-          description: 'Chocotone com a melhor combinação: brigadeiro e cocada! Sabores incomparáveis.',
+          description:
+            'Chocotone com a melhor combinação: brigadeiro e cocada! Sabores incomparáveis.',
           price: 'R$ 95,00',
         },
         {
           name: 'Nutelludo',
-          description: 'Chocotone recheado de original Nutella e brigadeiro de leite ninho.',
+          description:
+            'Chocotone recheado de original Nutella e brigadeiro de leite ninho.',
           price: 'R$ 110,00',
         },
-
       ],
       'https://i.postimg.cc/wxXpSRMb/chocotone-fabi.jpg',
     ),
@@ -309,7 +311,7 @@ export class ProductsService {
           price: 'R$ 30,00',
         },
         {
-          name: 'Caixa com 12',
+          name: 'Caixa com 15',
           description: '',
           price: 'R$ 80,00',
         },

@@ -67,7 +67,10 @@
           map-get($spacing, medium) map-get($spacing, x-large);
         font-weight: map-get($font-weight, bold);
         min-width: 200px;
+        min-height: 84px;
         text-align: center;
+        display: flex;
+        align-items: center;
         color: $darker-brown;
 
         @media (min-width: $xs) {
@@ -84,6 +87,7 @@
           left: 128px;
           text-align: left;
           min-width: 350px;
+          min-height: 48px;
           padding: map-get($spacing, medium) map-get($spacing, medium)
             map-get($spacing, medium) map-get($spacing, x-large);
         }
