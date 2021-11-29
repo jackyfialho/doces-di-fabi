@@ -18,6 +18,8 @@ import { DolceWeekComponent } from './pages/dolce-week/dolce-week.component';
 import { UnderConstructionComponent } from './shared/components/under-construction/under-construction.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FloatingButtonsComponent } from './shared/components/floating-buttons/floating-buttons.component';
+import { ProductListComponent } from './shared/components/product-list/product-list.component';
+import { ProductCardComponent } from './shared/components/product-list/components/product-list-item/components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { FloatingButtonsComponent } from './shared/components/floating-buttons/f
     UnderConstructionComponent,
     AboutComponent,
     FloatingButtonsComponent,
+    ProductListComponent,
+    ProductCardComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],
