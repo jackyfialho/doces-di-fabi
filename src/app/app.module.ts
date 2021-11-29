@@ -19,6 +19,8 @@ import { UnderConstructionComponent } from './shared/components/under-constructi
 import { AboutComponent } from './pages/about/about.component';
 import { FloatingButtonsComponent } from './shared/components/floating-buttons/floating-buttons.component';
 import { ChristmasMenuComponent } from './pages/christmas-menu/christmas-menu.component';
+import { ProductListComponent } from './shared/components/product-list/product-list.component';
+import { ProductCardComponent } from './shared/components/product-list/components/product-list-item/components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { ChristmasMenuComponent } from './pages/christmas-menu/christmas-menu.co
     AboutComponent,
     FloatingButtonsComponent,
     ChristmasMenuComponent,
+    ProductListComponent,
+    ProductCardComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],
