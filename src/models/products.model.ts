@@ -2,17 +2,34 @@ export class Product {
   public name: string;
   public price: string;
   public description: string;
-  public flavors?: { name: string; description?: string; price?: string }[];
+  public flavors?: {
+    name: string;
+    description?: string;
+    price?: string;
+    extraInfos?: boolean;
+    extraInfo1?: string;
+    extraInfo2?: string;
+  }[];
   public weight?: string;
   public imagePath?: string;
+  public hasMoreInfos?: boolean;
+  public moreInfosArray?: string[];
 
   constructor(
     name: string,
     price: string,
     desc: string,
     weight?: string,
-    flavs?: { name: string; description?: string; price?: string }[],
+    flavs?: {
+      name: string;
+      description?: string;
+      price?: string;
+      extraInfos?: boolean;
+      extraInfosArray?: string[];
+    }[],
     imgPath?: string,
+    hasMoreInfos?: boolean,
+    moreInfosArray?: string[],
   ) {
     this.name = name;
     this.price = price;
@@ -20,5 +37,7 @@ export class Product {
     this.weight = weight;
     this.flavors = flavs;
     this.imagePath = imgPath;
+    this.hasMoreInfos = hasMoreInfos;
+    this.moreInfosArray = moreInfosArray;
   }
 }

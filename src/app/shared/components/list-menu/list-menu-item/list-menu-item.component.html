@@ -1,12 +1,7 @@
 <div class="container">
   <div class="row no-gutters">
     <div
-      class="
-        product-name
-        col-12 col-md-6
-        d-flex
-        justify-content-center justify-content-md-start
-      "
+      class="product-name col-12 col-md-6 d-flex justify-content-center justify-content-md-start"
     >
       <fa-icon class="icon" [icon]="faCookieBite"></fa-icon>
       <span *ngIf="product.weight !== ''; else elseBlock">
@@ -15,18 +10,20 @@
       <ng-template #elseBlock> {{ product.name }}</ng-template>
     </div>
     <div
-      class="
-        product-price
-        col-12 col-md-6
-        d-flex
-        justify-content-center justify-content-md-end
-      "
+      class="product-price col-12 col-md-6 d-flex justify-content-center justify-content-md-end"
     >
       {{ product.price }}
     </div>
   </div>
 
   <div class="row" *ngIf="product.description">
+    <div class="product-more-infos" *ngIf="product.hasMoreInfos">
+      <ul>
+        <ul>
+          <li *ngFor="let item of product.moreInfosArray">{{ item }}</li>
+        </ul>
+      </ul>
+    </div>
     <div class="product-description col-12">
       {{ product.description }}
     </div>
@@ -35,13 +32,7 @@
   <div class="row">
     <div
       *ngIf="product.flavors.length !== 0"
-      class="
-        product-flavors
-        col-12 col-md-6
-        d-flex
-        flex-column
-        justify-content-center
-      "
+      class="product-flavors col-12 col-md-6 d-flex flex-column justify-content-center"
       [ngClass]="{
         'product-flavors product-with-image': product.imagePath !== ''
       }"

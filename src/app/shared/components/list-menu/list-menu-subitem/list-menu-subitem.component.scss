@@ -19,4 +19,18 @@
     font-size: map-get($font-size, small);
     text-align: justify;
   }
+
+  .subitem-extra-infos {
+    font-size: map-get($font-size, small);
+    text-align: left;
+    padding-top: map-get($spacing, small);
+
+    ul {
+      padding: 0;
+    }
+
+    ul > li {
+      list-style: none;
+    }
+  }
 }

@@ -5,6 +5,11 @@
       >- {{ subitem.price }}</span
     >
   </div>
+  <div class="subitem-extra-infos" *ngIf="subitem.extraInfos">
+    <ul>
+      <li *ngFor="let item of subitem.extraInfosArray">{{ item }}</li>
+    </ul>
+  </div>
   <div class="subitem-description" *ngIf="subitem.description">
     {{ subitem.description }}
   </div>

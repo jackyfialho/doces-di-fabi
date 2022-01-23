@@ -8,49 +8,67 @@ import { Product } from 'src/models/products.model';
 export class ProductsService {
   private takeOutProducts: Product[] = [
     new Product(
-      'Bolo de pote',
-      'R$ 13,00',
+      'Bolos de pote',
+      'R$ 14,00',
       '',
       '220ml',
       [
         {
-          name: 'Abacaxi e Ninho',
-          description:
-            'Massa especial com creme branco e generosos pedaços de abacaxi acompanhada de uma mousse aerada de leite ninho. O verdadeiro sabor da infância.',
-        },
-        {
           name: 'Nutelíssimo',
           description:
-            'Brigadeiro original de Nutella acompanhado de uma deliciosa massa de bolo e mousse areada de leite ninho. Só a Fabi faz pra você assim!',
+            'Brigadeiro de verdadeira Nutella e mousse areada de leite Ninho, só a Fabi faz pra você!',
         },
         {
-          name: 'Explosão Vermelha',
+          name: 'Abacaxi e Ninho',
           description:
-            'Geleia de frutas vermelhas com pedaços da fruta e a cremosidade especial de uma geleia perfeita, acompanhada de nossa deliciosa mousse aerada de ninho.',
+            'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse areada de leite Ninho. O verdadeiro sabor da infância!',
+        },
+        {
+          name: 'Blend de amor',
+          description: 'Nosso blend está recheado ',
         },
       ],
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
     ),
     new Product(
-      'Copo Supreme da Fabi',
-      'R$ 17,00',
+      'Torta dno pote',
+      'R$ 16,00',
       '',
-      '260ml',
+      '220ml',
       [
         {
-          name: 'Duo de Brigadeiro',
+          name: 'Banana',
           description:
-            'Feito com nosso delicioso brigadeiro tradicional e brigadeiro 4 leites! Finalizamos com o preferido de todos: brigadeiros gourmet! Você merece essa delícia!',
+            'A melhor torta de banana caramelizada da sua vida com um creme 4 leites! Você vai se surpreender!',
         },
         {
-          name: 'Oreo',
+          name: 'Romeu e Julieta',
           description:
-            'Nosso delicioso brigadeiro com mousse aerada de leite ninho! Para os amantes eternos do Oreo.',
+            'A queridinha de todos feita com cream cheese e geleia de goiaba! Acompanhada de uma farofa crocante de biscoito!',
+        },
+      ],
+      'https://i.postimg.cc/65rMH5TZ/torta-banana-pote.jpg',
+    ),
+    new Product(
+      'Copo Supreme da Fabi',
+      'R$ 23,00',
+      '',
+      '270ml',
+      [
+        {
+          name: 'Delícia Tropical',
+          description:
+            'Salada de frutas da época muito bem selecionadas, acompanhada de um creme de yougurte saborizado com frutas vermelhas. E vem com uma granola artesanal que só a Fabi faz pra vocês!',
+        },
+        {
+          name: 'Napolitano',
+          description:
+            'Um copo recheado de sabores: mousse de chocolate, danone da Fabi, nossa mousse aerada de leite Ninho, pedaços de chocolate e finalizado com chantilly! Cada colherada uma explosão de sabor!',
         },
       ],
       'https://i.postimg.cc/VkPhyW1M/copo-supreme-oreo.jpg',
     ),
-    new Product(
+    /* new Product(
       'Caixa de Trufas',
       'a partir de R$ 22,90',
       'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais!',
@@ -71,7 +89,7 @@ export class ProductsService {
         },
       ],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
-    ),
+    ), */
     // new Product(
     //   'Super Fatia da Fabi',
     //   'R$ 19,00',
@@ -80,14 +98,14 @@ export class ProductsService {
     //   [],
     //   'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
     // ),
-    new Product(
+    /* new Product(
       'Bolo Piscina da Fabi!',
       'R$ 79,00',
       'Versão cenoura e chocolate! Coberto com uma deliciosa Ganasche de chocolate meio amargo! As duas versões são de dar água na boca! Peça o seu com 2 (dois) dias de antecedência!',
       '800g',
       [],
       'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
-    ),
+    ), */
     // new Product(
     //   'Caserinho de cenoura  e chocolate!',
     //   'R$ 25,90',
@@ -96,7 +114,7 @@ export class ProductsService {
     //   [],
     //   'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
     // ),
-    new Product(
+    /* new Product(
       'Tortinha compartilhada',
       'R$ 25,00',
       '',
@@ -107,11 +125,11 @@ export class ProductsService {
           description:
             'Massa aveludada, delicioso recheio de creme chesse com nossa mousse aerada de ninho.',
         },
-        // {
-        //   name: 'Abacaxi e cocada cremosa',
-        //   description:
-        //     'Você merece experimentar essa cocada da Fabi! Uma delícia que derrete na boca e uma farofinha de biscoito crocante!',
-        // },
+        {
+          name: 'Abacaxi e cocada cremosa',
+          description:
+            'Você merece experimentar essa cocada da Fabi! Uma delícia que derrete na boca e uma farofinha de biscoito crocante!',
+        },
       ],
       'https://i.postimg.cc/Bbv1X7YD/torta-compartilhada-red-velvet.jpg',
     ),
@@ -146,7 +164,7 @@ export class ProductsService {
       '',
       [],
       'https://i.postimg.cc/J7bzBsGt/brownie-brigadeiro.jpg',
-    ),
+    ), */
   ];
 
   private preOrderProducts: Product[] = [
@@ -157,76 +175,112 @@ export class ProductsService {
       '',
       [
         {
+          name: 'Nutelíssimo',
+          description:
+            'Brigadeiro da verdadeira Nutella e mousse areada de leite Ninho, só a Fabi faz pra você!',
+          price: '',
+          extraInfos: true,
+          extraInfosArray: ['Tamanho G - R$ 170,00', 'Tamanho P - R$ 90,00'],
+        },
+        {
           name: 'Abacaxi com ninho',
           description:
-            'Torta com generosos pedaços de abacaxi e nossa mousse aerada de leite ninho! Um sabor que nos remete a infância! Você merece a melhor e a Fabi faz pra você! ',
+            'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse aerada de leite Ninho. O verdadeiro sabor da infância!',
           price: '',
-        },
-        {
-          name: 'Danet da Fabi',
-          description:
-            'Uma sobremesa para toda a família! Feita com uma deliciosa massa de bolo, nosso Danet especial e mousse aerada de leite ninho. Além de brigadeiros para decorar!',
-          price: '',
-        },
-        {
-          name: 'Brigadeiríssima de Nutella',
-          description:
-            'Torta feita com o verdadeiro brigadeiro de Nutella que só a Fabi faz pra sua família! Vocês merecem experimentar e se deliciar! Nossa mousse aerada faz toda a diferença nessa torta!',
-          price: '',
-        },
-        {
-          name: 'Red Velvet com Cream Cheese',
-          description:
-            'Massa aveludada com sabor super especial, acompanhada de um delicioso recheio premium de Cream Cheese e mousse de leite ninho! Se surpreeenda com essa combinação!',
-          price: '',
+          extraInfos: true,
+          extraInfosArray: ['Tamanho G - R$ 150,00', 'Tamanho P - R$ 80,00'],
         },
       ],
       'https://i.postimg.cc/CKDW6qyq/nova-taca.jpgg',
     ),
     new Product(
-      'Trufas de chocolate',
-      '(cento) R$ 350,00',
-      'Nossas trufas podem abrilhantar seu evento! Saborosas e derretem na boca com o gosto inigualável do mais puro chocolate.',
-      '35g',
-      [],
-      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
-    ),
-    new Product(
-      'Kit presente da Fabi',
+      'Bombons',
       '',
-      'Surpreenda quem você ama com nossos kits! Todas as nossas delicias em uma cesta presente!',
+      '',
       '',
       [
         {
-          name: 'Kit Master',
+          name: 'Bombom de Uva',
           description:
-            'Contém: 4 pães de mel, 2 bolos de pote, 1 caixa com 6 trufas de chocolate, 1 copo supreme, 2 mix de amendoim, 2 keep cooler e 1 caserinho de cenoura e chocolate.',
-          price: 'R$ 194,00',
+            'Creme refrescante 4 leites, uvas selecionadas e finalizado com uma ganasche de chocolate meio amargo.',
+          price: '',
+          extraInfos: true,
+          extraInfosArray: ['Tamanho G - R$ 120,00', 'Tamanho P - R$ 70,00'],
         },
         {
-          name: 'Kit Premium',
+          name: 'Dois Amores',
           description:
-            'Contém: 2 pães de mel, 2 bolos de pote, 1 barra de chocolate, 1 caixa com 4 trufas de chocolate, 2 mix de amendoim, 2 keep cooler e 1 caserinho de chocolate.',
-          price: 'R$ 174,00',
+            'Torta mousse de chocolate com nossa deliciosa mousse de leite Ninho! Essa combinação não tem erro!',
+          price: '',
+          extraInfos: true,
+          extraInfosArray: ['Tamanho G - R$ 140,00', 'Tamanho P - R$ 80,00'],
         },
       ],
-      'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
-    ),
-    new Product(
-      'Bombom de morango',
-      '',
-      'Nossa mousse aerada de leite ninho com morangos e ganasche de chocolate.',
-      '',
-      [],
-      'https://i.postimg.cc/RZw6SgKp/bombom-morango.jpg',
-    ),
-    new Product(
-      'Bombom surpresa de uva',
-      '',
-      'Creme de leite ninho com uvas selecionadas, ganasche de chocolate meio amargo e nosso maravilhos brownie chocolatudo.',
-      '',
-      [],
       'https://i.postimg.cc/rwTWr6V2/supresa-uva.jpg',
+    ),
+    new Product(
+      'Brownie Onstentação',
+      '',
+      'Nosso maravilhoso brownie em cubos, com mousse de doce de leite cremoso e ganasche de chocolate meio amargo.',
+      '',
+      [],
+      'https://i.postimg.cc/fTw9zDfc/brownie-onstentacao-2.jpg',
+      true,
+      ['Tamanho G - R$ 150,00', 'Tamanho P - R$ 80,00'],
+    ),
+    new Product(
+      'Chocolatudo da Fabi',
+      'R$ 54,90',
+      'Uma massa de chocolate como vc nunca viu! Aerada é super fofa! Coberta com ganasche de chocolate! Quem não ama um lanche da tarde né!',
+      '',
+      [],
+      'https://i.postimg.cc/DZCrD35h/chocolatudo-fabi.png',
+    ),
+    new Product(
+      'Trufas da Fabi',
+      '(cento) R$ 350,00',
+      'São irresistíveis, com característico sabor de chocolate que derrete na primeira mordida!',
+      '',
+      [],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
+      true,
+      [
+        'Caixa com 4 unidades - R$ 22,90',
+        'Caixa com 6 unidades - R$ 34,90',
+        'Individuais (pedido mínimo de 10 unidades) - R$ 7,00',
+      ],
+    ),
+    new Product(
+      'Brigadeiros da Fabi',
+      '(cento) R$140,00',
+      'São irresistíveis, com característico sabor de chocolate que derrete na primeira mordida!',
+      '',
+      [
+        {
+          name: 'Tradicional',
+          description:
+            'Brigadeiro cremoso, com um sabor único de chocolate que derrete na boca.',
+          price: '',
+        },
+        {
+          name: 'Briganinho',
+          description: 'Brigadeiro de leite Ninho cremoso e suave.',
+          price: '',
+        },
+        {
+          name: 'Beijinho de coco',
+          description:
+            'Brigadeiro tradicional de coco cremoso, porque você merece!',
+          price: '',
+        },
+        {
+          name: 'Casadinho duo',
+          description:
+            'Uma dupla imbatível do nosso brigadeiro tradicional com briganinho!',
+          price: '',
+        },
+      ],
+      'https://i.postimg.cc/0jgzV7Bp/bg-beijinho.jpg',
     ),
   ];
 

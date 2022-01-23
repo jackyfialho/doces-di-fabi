@@ -27,6 +27,20 @@
     color: $darker-brown;
   }
 
+  .product-more-infos {
+    font-size: 15px;
+    text-align: left;
+    padding-left: map-get($spacing, medium);
+
+    ul {
+      padding: 0;
+    }
+
+    ul > li {
+      list-style: none;
+    }
+  }
+
   .product-description {
     font-size: map-get($font-size, medium);
     font-weight: map-get($font-weight, normal);

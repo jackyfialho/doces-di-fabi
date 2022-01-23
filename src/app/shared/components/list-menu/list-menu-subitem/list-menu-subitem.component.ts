@@ -6,7 +6,14 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./list-menu-subitem.component.scss'],
 })
 export class ListMenuSubitemComponent implements OnInit {
-  @Input() subitem: { name: string; description?: string; price?: string };
+  @Input() subitem: {
+    name: string;
+    description?: string;
+    price?: string;
+    extraInfos?: boolean;
+    extraInfo1?: string;
+    extraInfo2?: string;
+  };
 
   constructor() {}
 
