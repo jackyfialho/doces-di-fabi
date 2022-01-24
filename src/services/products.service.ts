@@ -267,7 +267,7 @@ export class ProductsService {
     new Product(
       'Brigadeiros da Fabi',
       '(cento) R$140,00',
-      'São irresistíveis, com característico sabor de chocolate que derrete na primeira mordida!',
+      '',
       '',
       [
         {
