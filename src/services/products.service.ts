@@ -25,19 +25,25 @@ export class ProductsService {
         },
         {
           name: 'Blend de amor',
-          description: 'Nosso blend está recheado ',
+          description:
+            'Nosso blend está recheado de amor, com a dupla de brigadeiros mais queridos do cardápio, acompanhado de um delicioso bolo de chocolate. Porque você merece essa experiência!',
         },
       ],
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
     ),
     new Product(
-      'Torta dno pote',
+      'Torta no pote',
       'R$ 16,00',
       '',
       '220ml',
       [
         {
-          name: 'Banana',
+          name: 'Maracujá',
+          description:
+            'Torta acompanhada de uma deliciosa farofa de biscoito, mousse de maracujá e finalizada com ganasche de chocolate meio amargo. Essa torta tem excelência no sabor!',
+        },
+        {
+          name: 'Banana caramelizada',
           description:
             'A melhor torta de banana caramelizada da sua vida com um creme 4 leites! Você vai se surpreender!',
         },
@@ -66,7 +72,15 @@ export class ProductsService {
             'Um copo recheado de sabores: mousse de chocolate, danone da Fabi, nossa mousse aerada de leite Ninho, pedaços de chocolate e finalizado com chantilly! Cada colherada uma explosão de sabor!',
         },
       ],
-      'https://i.postimg.cc/VkPhyW1M/copo-supreme-oreo.jpg',
+      'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
+    ),
+    new Product(
+      'Crocantinha da Fabi',
+      'R$ 12,00',
+      'A melhor palha italiana da sua vida! Feita com brigadeiro cremoso, nossa queridinha Nutella e biscoito crocante! Cremosidade sem limite!',
+      '',
+      [],
+      'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
     ),
     /* new Product(
       'Caixa de Trufas',
