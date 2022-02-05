@@ -57,7 +57,7 @@ export class ProductsService {
     ),
     new Product(
       'Copo Supreme da Fabi',
-      'R$ 23,00',
+      'R$ 19,90',
       '',
       '270ml',
       [
@@ -67,9 +67,14 @@ export class ProductsService {
             'Salada de frutas da época muito bem selecionadas, acompanhada de um creme de yougurte saborizado com frutas vermelhas. E vem com uma granola artesanal que só a Fabi faz pra vocês!',
         },
         {
-          name: 'Napolitano',
+          name: 'Três Mousses',
           description:
-            'Um copo recheado de sabores: mousse de chocolate, danone da Fabi, nossa mousse aerada de leite Ninho, pedaços de chocolate e finalizado com chantilly! Cada colherada uma explosão de sabor!',
+            'Um copo recheado de sabores. Mousse de chocolate, morango e Ninho com pedaços de chocolate e brownie. Uma explosão de sabores!',
+        },
+        {
+          name: 'Kit Kat',
+          description:
+            'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece !',
         },
       ],
       'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
