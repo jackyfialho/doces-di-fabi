@@ -8,6 +8,21 @@
     Cardápio de Natal
     <fa-icon class="icon" [icon]="faCandyCane" size="1x"></fa-icon>
   </h4>
+  <h4 *ngIf="menu === 'easter'" class="easter">
+    <img
+      src="./assets/img/menu_pascoa.png"
+      alt="ovo de páscoa cor de rosa"
+      width="35px"
+      (click)="convetToPDF(menu)"
+    />
+    Páscoa doce da Fabi
+    <img
+      src="./assets/img/menu_pascoa.png"
+      alt="ovo de páscoa cor de rosa"
+      width="35px"
+      (click)="convetToPDF(menu)"
+    />
+  </h4>
   <p *ngIf="dolceWeekDays">
     Nossa Semana Dolce {{ dolceWeekMonth }} irá acontecer nos dias
     {{ dolceWeekDays }}. E como vai funcionar? A partir de outubro teremos,
@@ -40,7 +55,7 @@
         [product]="productEl"
       ></app-list-menu-item>
 
-      <div class="menu-img" *ngIf="menu !== 'christmas'">
+      <div class="menu-img" *ngIf="menu !== 'christmas' && menu !== 'easter'">
         <img
           src="./assets/img/bolo_menu.png"
           alt="bolo de chocolate"
@@ -53,6 +68,15 @@
         <img
           src="./assets/img/menu_natal.png"
           alt="doce bengala de natal"
+          width="90px"
+          (click)="convetToPDF(menu)"
+        />
+      </div>
+
+      <div class="menu-img pascoa" *ngIf="menu === 'easter'">
+        <img
+          src="./assets/img/menu_pascoa.png"
+          alt="ovo de páscoa cor de rosa"
           width="90px"
           (click)="convetToPDF(menu)"
         />

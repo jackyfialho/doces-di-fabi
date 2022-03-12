@@ -2,6 +2,7 @@ export class Product {
   public name: string;
   public price: string;
   public description: string;
+  public weight?: string;
   public flavors?: {
     name: string;
     description?: string;
@@ -10,7 +11,6 @@ export class Product {
     extraInfo1?: string;
     extraInfo2?: string;
   }[];
-  public weight?: string;
   public imagePath?: string;
   public hasMoreInfos?: boolean;
   public moreInfosArray?: string[];

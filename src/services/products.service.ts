@@ -24,9 +24,9 @@ export class ProductsService {
             'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse areada de leite Ninho. O verdadeiro sabor da infância!',
         },
         {
-          name: 'Blend de amor',
+          name: 'Sensação',
           description:
-            'Nosso blend está recheado de amor, com a dupla de brigadeiros mais queridos do cardápio, acompanhado de um delicioso bolo de chocolate. Porque você merece essa experiência!',
+            'Massa de chocolate aerada, acompanhada de um delicioso creme de chocolate e morango com frutas vermelhas, o Danone da Fabi!',
         },
       ],
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
@@ -38,46 +38,17 @@ export class ProductsService {
       '220ml',
       [
         {
-          name: 'Maracujá',
-          description:
-            'Torta acompanhada de uma deliciosa farofa de biscoito, mousse de maracujá e finalizada com ganasche de chocolate meio amargo. Essa torta tem excelência no sabor!',
-        },
-        {
           name: 'Banana caramelizada',
           description:
             'A melhor torta de banana caramelizada da sua vida com um creme 4 leites! Você vai se surpreender!',
         },
         {
-          name: 'Romeu e Julieta',
+          name: 'Gelado de Maracujá',
           description:
-            'A queridinha de todos feita com cream cheese e geleia de goiaba! Acompanhada de uma farofa crocante de biscoito!',
+            'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
         },
       ],
       'https://i.postimg.cc/65rMH5TZ/torta-banana-pote.jpg',
-    ),
-    new Product(
-      'Copo Supreme da Fabi',
-      'R$ 19,90',
-      '',
-      '270ml',
-      [
-        {
-          name: 'Delícia Tropical',
-          description:
-            'Salada de frutas da época muito bem selecionadas, acompanhada de um creme de yougurte saborizado com frutas vermelhas. E vem com uma granola artesanal que só a Fabi faz pra vocês!',
-        },
-        {
-          name: 'Três Mousses',
-          description:
-            'Um copo recheado de sabores. Mousse de chocolate, morango e Ninho com pedaços de chocolate e brownie. Uma explosão de sabores!',
-        },
-        {
-          name: 'Kit Kat',
-          description:
-            'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece !',
-        },
-      ],
-      'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
     ),
     new Product(
       'Crocantinha da Fabi',
@@ -87,103 +58,25 @@ export class ProductsService {
       [],
       'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
     ),
-    /* new Product(
-      'Caixa de Trufas',
-      'a partir de R$ 22,90',
-      'Nossas trufas são irresistíveis: característico sabor de chocolate que derrete na primeira mordida. É sabor que não acaba mais!',
-      '',
-      [
-        {
-          name: '4 unidades',
-          price: 'R$ 22,90',
-        },
-        {
-          name: '6 unidades',
-          price: 'R$ 32,90',
-        },
-        {
-          name: 'Individuais',
-          price: 'R$ 7,00 (cada)*',
-          description: '*apenas para pedidos acima de 5 unidades',
-        },
-      ],
-      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
-    ), */
-    // new Product(
-    //   'Super Fatia da Fabi',
-    //   'R$ 19,00',
-    //   'Uma generosa fatia gelada de chocolate, com mousse de leite ninho, pedaços do nosso Oreo de brigadeiro cremoso. Uma verdadeira explosão de fatia.',
-    //   '',
-    //   [],
-    //   'https://i.postimg.cc/J056TxDP/fatia-supreme-oreo.jpg',
-    // ),
-    /* new Product(
-      'Bolo Piscina da Fabi!',
-      'R$ 79,00',
-      'Versão cenoura e chocolate! Coberto com uma deliciosa Ganasche de chocolate meio amargo! As duas versões são de dar água na boca! Peça o seu com 2 (dois) dias de antecedência!',
-      '800g',
-      [],
-      'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
-    ), */
-    // new Product(
-    //   'Caserinho de cenoura  e chocolate!',
-    //   'R$ 25,90',
-    //   'Sabor que só a Fabi faz!',
-    //   '350g',
-    //   [],
-    //   'https://i.postimg.cc/Px7sF2xP/caseirinho-chocolate.jpg',
-    // ),
-    /* new Product(
-      'Tortinha compartilhada',
-      'R$ 25,00',
-      '',
-      '',
-      [
-        {
-          name: 'Red Velvet',
-          description:
-            'Massa aveludada, delicioso recheio de creme chesse com nossa mousse aerada de ninho.',
-        },
-        {
-          name: 'Abacaxi e cocada cremosa',
-          description:
-            'Você merece experimentar essa cocada da Fabi! Uma delícia que derrete na boca e uma farofinha de biscoito crocante!',
-        },
-      ],
-      'https://i.postimg.cc/Bbv1X7YD/torta-compartilhada-red-velvet.jpg',
-    ),
     new Product(
-      'Pão de Mel*',
-      '(unid.) R$ 7,90',
+      'Copo Supreme da Fabi',
+      'R$ 20,00',
       '',
-      '80g',
+      '270ml',
       [
         {
-          name: 'Doce de Leite',
+          name: 'Kit Kat',
           description:
-            'Recheado com um cremoso doce de leite e banhado no chocolate. Você vai se surpreender com esse sabor.',
+            'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece !',
         },
         {
-          name: 'Nuteludo da Fabi',
+          name: 'Dois Amores',
           description:
-            'Generosamente recheado de Nutella e banhado e nosso delicioso chocolate. Não dá pra comer um só!',
-        },
-        {
-          name: '',
-          description:
-            '*Todos os sabores: pedido mínimo a partir de 10 unidades.',
+            'Nossa deliciosa mousse de Ninhho com brigadeiro cremoso e pedaços de chocolate.',
         },
       ],
-      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
+      'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
     ),
-    new Product(
-      'Brownie recheado de brigadeiro',
-      '(porção individual) R$ 12,00',
-      'O melhor brownie só a Fabi tem! E ele vem recheado de brigadeiro gourmet!',
-      '',
-      [],
-      'https://i.postimg.cc/J7bzBsGt/brownie-brigadeiro.jpg',
-    ), */
   ];
 
   private preOrderProducts: Product[] = [
@@ -401,6 +294,89 @@ export class ProductsService {
     ),
   ];
 
+  private easterProducts: Product[] = [
+    new Product(
+      'Kit Kat',
+      'R$ 110,00',
+      'Ovo cravejado com recheio de palha italiana',
+      '980g',
+      [],
+      'https://i.postimg.cc/YSCTrPZT/ovo-kit-kat.jpg',
+    ),
+    new Product(
+      'Laka Oreo',
+      'R$ 110,00',
+      'Ovo cravejado com recheio de laka e Oreo',
+      '980g',
+      [],
+      'https://i.postimg.cc/MTNGbV1K/ovo-laka-oreo.jpg',
+    ),
+    new Product(
+      'Finni',
+      'R$ 110,00',
+      'Ovo cravejado com recheio de brigadeiro',
+      '980g',
+      [],
+      'https://i.postimg.cc/bNHzdKVv/ovo-finni.jpg',
+    ),
+    new Product(
+      'Trufado',
+      'R$ 110,00',
+      'Ovo trufado de casca recheada de coco ou chocolate',
+      'aprox. 980g',
+      [],
+      'https://i.postimg.cc/zv7cYSpq/ovo-trufado.jpg',
+    ),
+    new Product(
+      'Kinder',
+      'R$ 90,00',
+      'Ovo de colher',
+      'aprox. 600g',
+      [],
+      'https://i.postimg.cc/fW5fkzZW/ovo-kinder.jpg',
+    ),
+    new Product(
+      'Ninho e Nutella',
+      'R$ 90,00',
+      'Ovo de colher',
+      'aprox. 600g',
+      [],
+      'https://i.postimg.cc/8czbM8BV/ovo-colher-ninho-nutela.jpg',
+    ),
+    new Product(
+      'Crocantinho',
+      'R$ 90,00',
+      'Ovo de colher',
+      'aprox. 600g',
+      [],
+      'https://i.postimg.cc/XJQfVHM1/ovo-crocantinho.jpg',
+    ),
+    new Product(
+      'Especial Brownie Brigadeiro',
+      'R$ 90,00',
+      '',
+      '',
+      [],
+      'https://i.postimg.cc/GmGvBhwy/ovo-brownie.jpg',
+    ),
+    new Product(
+      'Especial Maracujá',
+      'R$ 60,00*',
+      'Prévia de lançamento! *Valor de R$ 60,00 SOMENTE NA PRÉVIA',
+      '',
+      [],
+      'https://i.postimg.cc/gc7hN6Gh/ovo-maracuja.jpg',
+    ),
+    new Product(
+      'Ovo de Pote',
+      'R$ 40,00',
+      'Para presentear! Pode de vidro!',
+      '200ml',
+      [],
+      'https://i.postimg.cc/QxLnkNwQ/ovo-de-pote.jpg',
+    ),
+  ];
+
   getTakeOutProducts() {
     return this.takeOutProducts.slice();
   }
@@ -415,5 +391,9 @@ export class ProductsService {
 
   getChristmasProducts() {
     return this.christmasProducts.slice();
+  }
+
+  getEasterProducts() {
+    return this.easterProducts.slice();
   }
 }

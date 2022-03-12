@@ -16,10 +16,10 @@
     inset 0 0 40px rgba(0, 0, 0, 0.1);
   z-index: 999;
 
-  @media (min-width: $lg) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  // @media (min-width: $lg) {
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 
   .logo-container {
     background-color: $white;
@@ -35,9 +35,9 @@
     .logo-text {
       margin-left: 50px;
 
-      @media (min-width: $lg) {
-        margin-left: 40px;
-      }
+      // @media (min-width: $lg) {
+      //   margin-left: 40px;
+      // }
     }
 
     img {
@@ -45,10 +45,10 @@
       height: auto;
       position: absolute;
 
-      @media (min-width: $lg) {
-        top: 22px;
-        left: 38px;
-      }
+      // @media (min-width: $lg) {
+      //   top: 22px;
+      //   left: 38px;
+      // }
     }
   }
 
