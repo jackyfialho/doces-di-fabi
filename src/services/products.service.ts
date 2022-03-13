@@ -354,7 +354,7 @@ export class ProductsService {
       'Crocantinho',
       'R$ 89,90',
       'Ovo de colher com casca texturizada branca, biscoito crocante, Nutella e brigadeiro cremoso 5 leites',
-      '600g',
+      '700g',
       [],
       'https://i.postimg.cc/XJQfVHM1/ovo-crocantinho.jpg',
     ),
