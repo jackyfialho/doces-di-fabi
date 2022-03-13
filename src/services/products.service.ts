@@ -99,7 +99,7 @@ export class ProductsService {
             'Brigadeiro da verdadeira Nutella e mousse areada de leite Ninho, só a Fabi faz pra você!',
           price: '',
           extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 170,00', 'Tamanho P - R$ 90,00'],
+          extraInfosArray: ['Tamanho G - R$ 170,00', 'Tamanho P - R$ 89,90'],
         },
         {
           name: 'Abacaxi com ninho',
@@ -304,7 +304,7 @@ export class ProductsService {
   private easterProducts: Product[] = [
     new Product(
       'Kit Kat',
-      'R$ 110,00',
+      'R$ 119,90',
       'Ovo cravejado de chocolate Kit Kat e recheado com brigadeiro cremoso de nossa palha italiana',
       '980g',
       [],
@@ -312,7 +312,7 @@ export class ProductsService {
     ),
     new Product(
       'Laka Oreo',
-      'R$ 110,00',
+      'R$ 119,90',
       'Ovo cravejado com pedaços de laka e recheio cremoso de oreo da Fabi',
       '980g',
       [],
@@ -320,7 +320,7 @@ export class ProductsService {
     ),
     new Product(
       'Finni',
-      'R$ 110,00',
+      'R$ 119,90',
       'Ovo cravejado de chocolate e brigadeiro cremoso',
       '980g',
       [],
@@ -328,7 +328,7 @@ export class ProductsService {
     ),
     new Product(
       'Trufado',
-      'R$ 110,00',
+      'R$ 119,90',
       'Ovo de casca recheada no sabor prestígio ou a maravilhosa trufa de chocolate da Fabi',
       '980g',
       [],
@@ -336,23 +336,23 @@ export class ProductsService {
     ),
     new Product(
       'Kinder',
-      'R$ 90,00',
+      'R$ 89,90',
       'Ovo de colher com recheio tipo kinder , finalizado com barrinhas de chocolate ',
-      '600g',
+      '700g',
       [],
       'https://i.postimg.cc/fW5fkzZW/ovo-kinder.jpg',
     ),
     new Product(
       'Ninho e Nutella',
-      'R$ 90,00',
+      'R$ 89,90',
       'Ovo de colher recheado com nutela e briganinho',
-      '600g',
+      '700g',
       [],
       'https://i.postimg.cc/8czbM8BV/ovo-colher-ninho-nutela.jpg',
     ),
     new Product(
       'Crocantinho',
-      'R$ 90,00',
+      'R$ 89,90',
       'Ovo de colher com casca texturizada branca, biscoito crocante, Nutella e brigadeiro cremoso 5 leites',
       '600g',
       [],
@@ -360,7 +360,7 @@ export class ProductsService {
     ),
     new Product(
       'Especial Brownie Brigadeiro',
-      'R$ 90,00',
+      'R$ 89,90',
       'Nosso maravilhoso brownie recheado de brigadeiro',
       '',
       [],
@@ -368,7 +368,7 @@ export class ProductsService {
     ),
     new Product(
       'Especial Maracujá',
-      'R$ 60,00*',
+      'R$ 59,90*',
       'Ovo com recheio cremoso de maracujá. Obs: valor com desconto somente na prévia! Consulte período',
       '',
       [],
@@ -376,7 +376,7 @@ export class ProductsService {
     ),
     new Product(
       'Ovo de Pote',
-      'R$ 40,00',
+      'R$ 44,90',
       'Opção de presente com a versão dos nossos ovos em potinhos charmosos de vidro',
       '200ml',
       [],
