@@ -2,7 +2,7 @@
 
 .floating-buttons {
   position: fixed;
-  top: 69vh;
+  top: 65vh;
   right: 2vw;
   z-index: 1040;
   background-color: rgba(0, 0, 0, 0.6);
@@ -19,16 +19,8 @@
     padding: map-get($spacing, medium);
     font-size: 18px;
     max-width: 300px;
-    top: 85vh;
-    right: 3vw;
-  }
-
-  // @media (min-width: $lg) {
-  //   top: 85vh;
-  // }
-
-  @media (min-width: $xl) {
     top: 80vh;
+    right: 3vw;
   }
 
   .links-container {
