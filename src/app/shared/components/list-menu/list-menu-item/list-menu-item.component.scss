@@ -25,6 +25,7 @@
     font-family: map-get($font-family, primary);
     font-weight: map-get($font-weight, bold);
     color: $darker-brown;
+    margin-bottom: 16px;
   }
 
   .product-more-infos {
@@ -41,11 +42,17 @@
     }
   }
 
-  .product-description {
+  .product-description,
+  .product-weight {
     font-size: map-get($font-size, medium);
     font-weight: map-get($font-weight, normal);
     margin: 0 0 map-get($spacing, large) 0;
     text-align: justify;
+  }
+
+  .product-weight {
+    margin-top: -15px;
+    font-size: map-get($font-size, x-medium);
   }
 
   .product-flavors {

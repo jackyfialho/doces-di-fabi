@@ -10,6 +10,10 @@
     padding: map-get($spacing, xx-large);
   }
 
+  .easter {
+    text-align: left;
+  }
+
   h4 {
     font-family: map-get($font-family, primary);
     font-weight: map-get($font-weight, medium);
@@ -48,7 +52,7 @@
   }
 
   p {
-    padding: map-get($spacing, xx-large) map-get($spacing, medium) 0
+    padding: map-get($spacing, x-large) map-get($spacing, medium) 0
       map-get($spacing, medium);
     font-weight: map-get($font-weight, medium);
     font-size: map-get($font-size, medium);
@@ -60,10 +64,6 @@
     padding: map-get($spacing, large);
     border-radius: map-get($spacing, small);
     margin-top: map-get($spacing, x-large);
-
-    @media (min-width: $sm) {
-      margin-top: map-get($spacing, xx-large);
-    }
   }
 
   .menu-border {

@@ -32,23 +32,20 @@ export class ProductsService {
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
     ),
     new Product(
-      'Torta no pote',
+      'Torta no pote - Banana Caramelizada',
       'R$ 16,00',
-      '',
-      '220ml',
-      [
-        {
-          name: 'Banana caramelizada',
-          description:
-            'A melhor torta de banana caramelizada da sua vida com um creme 4 leites! Você vai se surpreender!',
-        },
-        {
-          name: 'Gelado de Maracujá',
-          description:
-            'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
-        },
-      ],
-      'https://i.postimg.cc/65rMH5TZ/torta-banana-pote.jpg',
+      'A melhor torta de banana caramelizada da sua vida com um creme 4 leites! Você vai se surpreender!',
+      '200ml',
+      [],
+      'https://i.postimg.cc/t41LZrSS/torta-pote-banana.jpg',
+    ),
+    new Product(
+      'Torta no pote - Gelado de Maracujá',
+      'R$ 16,00',
+      'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
+      '200ml',
+      [],
+      'https://i.postimg.cc/j2py8STJ/torta-pote-maracuja.jpg',
     ),
     new Product(
       'Crocantinha da Fabi',
@@ -62,17 +59,27 @@ export class ProductsService {
       'Copo Supreme da Fabi',
       'R$ 20,00',
       '',
-      '270ml',
+      '250ml',
       [
         {
           name: 'Kit Kat',
           description:
-            'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece !',
+            'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece!',
         },
         {
           name: 'Dois Amores',
           description:
             'Nossa deliciosa mousse de Ninhho com brigadeiro cremoso e pedaços de chocolate.',
+        },
+        {
+          name: 'Napolitano',
+          description:
+            'Mousse de Danoninho da Fabi acompanhada do melhor brownie, mousse de leite ninho e mousse de chocolate. Uma perfeição de copo!',
+        },
+        {
+          name: 'Laka Oreo',
+          description:
+            'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons Ouro Branco.',
         },
       ],
       'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
@@ -162,38 +169,38 @@ export class ProductsService {
         'Individuais (pedido mínimo de 10 unidades) - R$ 7,00',
       ],
     ),
-    new Product(
-      'Brigadeiros da Fabi',
-      '(cento) R$140,00',
-      '',
-      '',
-      [
-        {
-          name: 'Tradicional',
-          description:
-            'Brigadeiro cremoso, com um sabor único de chocolate que derrete na boca.',
-          price: '',
-        },
-        {
-          name: 'Briganinho',
-          description: 'Brigadeiro de leite Ninho cremoso e suave.',
-          price: '',
-        },
-        {
-          name: 'Beijinho de coco',
-          description:
-            'Brigadeiro tradicional de coco cremoso, porque você merece!',
-          price: '',
-        },
-        {
-          name: 'Casadinho duo',
-          description:
-            'Uma dupla imbatível do nosso brigadeiro tradicional com briganinho!',
-          price: '',
-        },
-      ],
-      'https://i.postimg.cc/0jgzV7Bp/bg-beijinho.jpg',
-    ),
+    // new Product(
+    //   'Brigadeiros da Fabi',
+    //   '(cento) R$140,00',
+    //   '',
+    //   '',
+    //   [
+    //     {
+    //       name: 'Tradicional',
+    //       description:
+    //         'Brigadeiro cremoso, com um sabor único de chocolate que derrete na boca.',
+    //       price: '',
+    //     },
+    //     {
+    //       name: 'Briganinho',
+    //       description: 'Brigadeiro de leite Ninho cremoso e suave.',
+    //       price: '',
+    //     },
+    //     {
+    //       name: 'Beijinho de coco',
+    //       description:
+    //         'Brigadeiro tradicional de coco cremoso, porque você merece!',
+    //       price: '',
+    //     },
+    //     {
+    //       name: 'Casadinho duo',
+    //       description:
+    //         'Uma dupla imbatível do nosso brigadeiro tradicional com briganinho!',
+    //       price: '',
+    //     },
+    //   ],
+    //   'https://i.postimg.cc/0jgzV7Bp/bg-beijinho.jpg',
+    // ),
   ];
 
   private dolceWeekProducts: Product[] = [];
@@ -298,7 +305,7 @@ export class ProductsService {
     new Product(
       'Kit Kat',
       'R$ 110,00',
-      'Ovo cravejado com recheio de palha italiana',
+      'Ovo cravejado de chocolate Kit Kat e recheado com brigadeiro cremoso de nossa palha italiana',
       '980g',
       [],
       'https://i.postimg.cc/YSCTrPZT/ovo-kit-kat.jpg',
@@ -306,7 +313,7 @@ export class ProductsService {
     new Product(
       'Laka Oreo',
       'R$ 110,00',
-      'Ovo cravejado com recheio de laka e Oreo',
+      'Ovo cravejado com pedaços de laka e recheio cremoso de oreo da Fabi',
       '980g',
       [],
       'https://i.postimg.cc/MTNGbV1K/ovo-laka-oreo.jpg',
@@ -314,7 +321,7 @@ export class ProductsService {
     new Product(
       'Finni',
       'R$ 110,00',
-      'Ovo cravejado com recheio de brigadeiro',
+      'Ovo cravejado de chocolate e brigadeiro cremoso',
       '980g',
       [],
       'https://i.postimg.cc/bNHzdKVv/ovo-finni.jpg',
@@ -322,39 +329,39 @@ export class ProductsService {
     new Product(
       'Trufado',
       'R$ 110,00',
-      'Ovo trufado de casca recheada de coco ou chocolate',
-      'aprox. 980g',
+      'Ovo de casca recheada no sabor prestígio ou a maravilhosa trufa de chocolate da Fabi',
+      '980g',
       [],
       'https://i.postimg.cc/zv7cYSpq/ovo-trufado.jpg',
     ),
     new Product(
       'Kinder',
       'R$ 90,00',
-      'Ovo de colher',
-      'aprox. 600g',
+      'Ovo de colher com recheio tipo kinder , finalizado com barrinhas de chocolate ',
+      '600g',
       [],
       'https://i.postimg.cc/fW5fkzZW/ovo-kinder.jpg',
     ),
     new Product(
       'Ninho e Nutella',
       'R$ 90,00',
-      'Ovo de colher',
-      'aprox. 600g',
+      'Ovo de colher recheado com nutela e briganinho',
+      '600g',
       [],
       'https://i.postimg.cc/8czbM8BV/ovo-colher-ninho-nutela.jpg',
     ),
     new Product(
       'Crocantinho',
       'R$ 90,00',
-      'Ovo de colher',
-      'aprox. 600g',
+      'Ovo de colher com casca texturizada branca, biscoito crocante, Nutella e brigadeiro cremoso 5 leites',
+      '600g',
       [],
       'https://i.postimg.cc/XJQfVHM1/ovo-crocantinho.jpg',
     ),
     new Product(
       'Especial Brownie Brigadeiro',
       'R$ 90,00',
-      '',
+      'Nosso maravilhoso brownie recheado de brigadeiro',
       '',
       [],
       'https://i.postimg.cc/GmGvBhwy/ovo-brownie.jpg',
@@ -362,7 +369,7 @@ export class ProductsService {
     new Product(
       'Especial Maracujá',
       'R$ 60,00*',
-      'Prévia de lançamento! *Valor de R$ 60,00 SOMENTE NA PRÉVIA',
+      'Ovo com recheio cremoso de maracujá. Obs: valor com desconto somente na prévia! Consulte período',
       '',
       [],
       'https://i.postimg.cc/gc7hN6Gh/ovo-maracuja.jpg',
@@ -370,7 +377,7 @@ export class ProductsService {
     new Product(
       'Ovo de Pote',
       'R$ 40,00',
-      'Para presentear! Pode de vidro!',
+      'Opção de presente com a versão dos nossos ovos em potinhos charmosos de vidro',
       '200ml',
       [],
       'https://i.postimg.cc/QxLnkNwQ/ovo-de-pote.jpg',

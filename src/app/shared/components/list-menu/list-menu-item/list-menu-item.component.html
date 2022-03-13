@@ -4,10 +4,7 @@
       class="product-name col-12 col-md-6 d-flex justify-content-center justify-content-md-start"
     >
       <fa-icon class="icon" [icon]="faCookieBite"></fa-icon>
-      <span *ngIf="product.weight !== ''; else elseBlock">
-        {{ product.name }} - {{ product.weight }}
-      </span>
-      <ng-template #elseBlock> {{ product.name }}</ng-template>
+      <span>{{ product.name }}</span>
     </div>
     <div
       class="product-price col-12 col-md-6 d-flex justify-content-center justify-content-md-end"
@@ -26,6 +23,9 @@
     </div>
     <div class="product-description col-12">
       {{ product.description }}
+    </div>
+    <div *ngIf="product.weight" class="product-weight col-12">
+      Peso aproximado: <u>{{ product.weight }}</u>
     </div>
   </div>
 
