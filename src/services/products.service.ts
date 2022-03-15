@@ -10,7 +10,7 @@ export class ProductsService {
     new Product(
       'Bolos de pote',
       'R$ 14,00',
-      '',
+      ' ',
       '220ml',
       [
         {
@@ -58,7 +58,7 @@ export class ProductsService {
     new Product(
       'Copo Supreme da Fabi',
       'R$ 20,00',
-      '',
+      ' ',
       '250ml',
       [
         {
@@ -71,6 +71,15 @@ export class ProductsService {
           description:
             'Nossa deliciosa mousse de Ninhho com brigadeiro cremoso e pedaços de chocolate.',
         },
+      ],
+      'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
+    ),
+    new Product(
+      'Copo Supreme Premium',
+      'R$ 25,00',
+      ' ',
+      '340ml',
+      [
         {
           name: 'Napolitano',
           description:
