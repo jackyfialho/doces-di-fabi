@@ -51,7 +51,7 @@ export class ProductsService {
       'https://i.postimg.cc/j2py8STJ/torta-pote-maracuja.jpg',
     ),
     new Product(
-      'Bombom no pote',
+      'Bombom no pote*',
       'R$ 16,00',
       '',
       '200ml',
@@ -73,6 +73,8 @@ export class ProductsService {
         },
       ],
       'https://i.postimg.cc/kgpj3yQg/bombom-no-pote.jpg',
+      true,
+      ['*Foto ilustrativa.'],
     ),
     new Product(
       'Crocantinha da Fabi',
