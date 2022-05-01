@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <div class="row" *ngIf="product.description">
+  <div class="row">
     <div class="product-more-infos" *ngIf="product.hasMoreInfos">
       <ul>
         <ul>
@@ -21,7 +21,7 @@
         </ul>
       </ul>
     </div>
-    <div class="product-description col-12">
+    <div *ngIf="product.description" class="product-description col-12">
       {{ product.description }}
     </div>
     <div *ngIf="product.weight" class="product-weight col-12">

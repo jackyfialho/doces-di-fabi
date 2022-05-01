@@ -9,7 +9,7 @@ export class ProductsService {
   private takeOutProducts: Product[] = [
     new Product(
       'Bolos de pote',
-      'R$ 14,00',
+      'R$ 15,00',
       ' ',
       '220ml',
       [
@@ -32,67 +32,110 @@ export class ProductsService {
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
     ),
     new Product(
-      'Torta no pote - Banana Caramelizada',
+      'Torta no pote',
       'R$ 16,00',
-      'A melhor torta de banana caramelizada da sua vida com um creme 4 leites! Você vai se surpreender!',
+      '',
       '200ml',
-      [],
-      'https://i.postimg.cc/t41LZrSS/torta-pote-banana.jpg',
-    ),
-    new Product(
-      'Torta no pote - Gelado de Maracujá',
-      'R$ 16,00',
-      'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
-      '200ml',
-      [],
+      [
+        {
+          name: 'Gelado de Maracujá',
+          description:
+            'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
+        },
+        {
+          name: 'Gelado de Limão',
+          description:
+            'Um refrescante mousse de limão acompanhado de uma farofa crocante e chantilly!',
+        },
+      ],
       'https://i.postimg.cc/j2py8STJ/torta-pote-maracuja.jpg',
     ),
     new Product(
+      'Bombom no pote',
+      'R$ 16,00',
+      '',
+      '200ml',
+      [
+        {
+          name: 'Surpresa de uva',
+          description:
+            'Creme de cinco leites da Fabi, uvas selecionadas e brigadeiro cremoso!',
+        },
+        {
+          name: 'KitKat',
+          description:
+            'Creme de Nhá Benta com pedaços de KitKat e mousse de chocolate.',
+        },
+        {
+          name: 'Dois amores',
+          description:
+            'Nossa deliciosa mousse de leite ninho com brigadeiro cremoso e gotas de chocolate.',
+        },
+      ],
+      'https://i.postimg.cc/kgpj3yQg/bombom-no-pote.jpg',
+    ),
+    new Product(
       'Crocantinha da Fabi',
-      'R$ 12,00',
+      'R$ 13,00',
       'A melhor palha italiana da sua vida! Feita com brigadeiro cremoso, nossa queridinha Nutella e biscoito crocante! Cremosidade sem limite!',
       '',
       [],
       'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
     ),
     new Product(
-      'Copo Supreme da Fabi',
-      'R$ 20,00',
-      ' ',
-      '250ml',
-      [
-        {
-          name: 'Kit Kat',
-          description:
-            'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece!',
-        },
-        {
-          name: 'Dois Amores',
-          description:
-            'Nossa deliciosa mousse de Ninhho com brigadeiro cremoso e pedaços de chocolate.',
-        },
-      ],
-      'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
+      'Fudge Laka Oreo da Fabi',
+      'R$ 13,00',
+      'Deliciosa palha italiana de chocolate branco e Oreo.',
+      '',
+      [],
+      'https://i.postimg.cc/WzsRF7fP/fudge-laka.jpg',
     ),
     new Product(
-      'Copo Supreme Premium',
-      'R$ 25,00',
-      ' ',
-      '340ml',
-      [
-        {
-          name: 'Napolitano',
-          description:
-            'Mousse de Danoninho da Fabi acompanhada do melhor brownie, mousse de leite ninho e mousse de chocolate. Uma perfeição de copo!',
-        },
-        {
-          name: 'Laka Oreo',
-          description:
-            'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons Ouro Branco.',
-        },
-      ],
-      'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
+      'Trufas de chocolate da Fabi',
+      '(unid. R$ 7,00)',
+      'Você nunca comeu uma trufa tão cremosa! O chocolate derrete na boca',
+      '',
+      [],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
     ),
+    // new Product(
+    //   'Copo Supreme da Fabi',
+    //   'R$ 20,00',
+    //   ' ',
+    //   '250ml',
+    //   [
+    //     {
+    //       name: 'Kit Kat',
+    //       description:
+    //         'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece!',
+    //     },
+    //     {
+    //       name: 'Dois Amores',
+    //       description:
+    //         'Nossa deliciosa mousse de Ninhho com brigadeiro cremoso e pedaços de chocolate.',
+    //     },
+    //   ],
+    //   'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
+    // ),
+    // new Product(
+    //   'Copo Supreme Premium',
+    //   'R$ 25,00',
+    //   ' ',
+    //   '340ml',
+    //   [
+    //     {
+    //       name: 'Napolitano',
+    //       description:
+    //         'Mousse de Danoninho da Fabi acompanhada do melhor brownie, mousse de leite ninho e mousse de chocolate. Uma perfeição de copo!',
+    //     },
+    //     {
+    //       name: 'Laka Oreo',
+    //       description:
+    //         'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons Ouro Branco.',
+    //     },
+    //   ],
+    //   'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
+    // ),
   ];
 
   private preOrderProducts: Product[] = [
@@ -108,7 +151,7 @@ export class ProductsService {
             'Brigadeiro da verdadeira Nutella e mousse areada de leite Ninho, só a Fabi faz pra você!',
           price: '',
           extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 170,00', 'Tamanho P - R$ 89,90'],
+          extraInfosArray: ['Tamanho G - R$ 180,00', 'Tamanho P - R$ 99,90'],
         },
         {
           name: 'Abacaxi com ninho',
@@ -116,10 +159,12 @@ export class ProductsService {
             'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse aerada de leite Ninho. O verdadeiro sabor da infância!',
           price: '',
           extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 150,00', 'Tamanho P - R$ 80,00'],
+          extraInfosArray: ['Tamanho G - R$ 160,00', 'Tamanho P - R$ 90,00'],
         },
       ],
-      'https://i.postimg.cc/CKDW6qyq/nova-taca.jpgg',
+      'https://i.postimg.cc/CKDW6qyq/nova-taca.jpg',
+      true,
+      ['Tamanho P: serve até 5 pessoas', 'Tamanho G: serve até 12 pessoas'],
     ),
     new Product(
       'Bombons',
@@ -133,7 +178,7 @@ export class ProductsService {
             'Creme refrescante 4 leites, uvas selecionadas e finalizado com uma ganasche de chocolate meio amargo.',
           price: '',
           extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 120,00', 'Tamanho P - R$ 70,00'],
+          extraInfosArray: ['Tamanho G - R$ 130,00', 'Tamanho P - R$ 80,00'],
         },
         {
           name: 'Dois Amores',
@@ -141,20 +186,25 @@ export class ProductsService {
             'Torta mousse de chocolate com nossa deliciosa mousse de leite Ninho! Essa combinação não tem erro!',
           price: '',
           extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 140,00', 'Tamanho P - R$ 80,00'],
+          extraInfosArray: ['Tamanho G - R$ 150,00', 'Tamanho P - R$ 90,00'],
         },
       ],
       'https://i.postimg.cc/rwTWr6V2/supresa-uva.jpg',
+      true,
+      ['Tamanho P: serve até 5 pessoas', 'Tamanho G: serve até 12 pessoas'],
     ),
     new Product(
-      'Brownie Onstentação',
+      'Brownie Onstentação*',
       '',
-      'Nosso maravilhoso brownie em cubos, com mousse de doce de leite cremoso e ganasche de chocolate meio amargo.',
+      'Nosso maravilhoso brownie em cubos, com mousse de doce de leite cremoso e ganasche de chocolate meio amargo. *Foto da taça ilustrativa',
       '',
       [],
       'https://i.postimg.cc/fTw9zDfc/brownie-onstentacao-2.jpg',
       true,
-      ['Tamanho G - R$ 150,00', 'Tamanho P - R$ 80,00'],
+      [
+        'Tamanho P (serve até 5 pessoas) - R$ 95,00',
+        'Tamanho G (serve até 12 pessoas) - R$ 170,00',
+      ],
     ),
     new Product(
       'Chocolatudo da Fabi',
@@ -178,38 +228,6 @@ export class ProductsService {
         'Individuais (pedido mínimo de 10 unidades) - R$ 7,00',
       ],
     ),
-    // new Product(
-    //   'Brigadeiros da Fabi',
-    //   '(cento) R$140,00',
-    //   '',
-    //   '',
-    //   [
-    //     {
-    //       name: 'Tradicional',
-    //       description:
-    //         'Brigadeiro cremoso, com um sabor único de chocolate que derrete na boca.',
-    //       price: '',
-    //     },
-    //     {
-    //       name: 'Briganinho',
-    //       description: 'Brigadeiro de leite Ninho cremoso e suave.',
-    //       price: '',
-    //     },
-    //     {
-    //       name: 'Beijinho de coco',
-    //       description:
-    //         'Brigadeiro tradicional de coco cremoso, porque você merece!',
-    //       price: '',
-    //     },
-    //     {
-    //       name: 'Casadinho duo',
-    //       description:
-    //         'Uma dupla imbatível do nosso brigadeiro tradicional com briganinho!',
-    //       price: '',
-    //     },
-    //   ],
-    //   'https://i.postimg.cc/0jgzV7Bp/bg-beijinho.jpg',
-    // ),
   ];
 
   private dolceWeekProducts: Product[] = [];
