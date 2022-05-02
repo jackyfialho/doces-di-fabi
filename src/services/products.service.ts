@@ -119,25 +119,27 @@ export class ProductsService {
     //   ],
     //   'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
     // ),
-    // new Product(
-    //   'Copo Supreme Premium',
-    //   'R$ 25,00',
-    //   ' ',
-    //   '340ml',
-    //   [
-    //     {
-    //       name: 'Napolitano',
-    //       description:
-    //         'Mousse de Danoninho da Fabi acompanhada do melhor brownie, mousse de leite ninho e mousse de chocolate. Uma perfeição de copo!',
-    //     },
-    //     {
-    //       name: 'Laka Oreo',
-    //       description:
-    //         'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons Ouro Branco.',
-    //     },
-    //   ],
-    //   'https://i.postimg.cc/GmNh945y/copo-supreme-fabi.jpg',
-    // ),
+    new Product(
+      'Copo Supreme Premium*',
+      'R$ 29,00',
+      ' ',
+      '340ml',
+      [
+        {
+          name: 'Napolitano',
+          description:
+            'Mousse de Danoninho da Fabi acompanhada do melhor brownie, mousse de leite ninho e mousse de chocolate. Uma perfeição de copo!',
+        },
+        {
+          name: 'Laka Oreo',
+          description:
+            'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons Ouro Branco.',
+        },
+      ],
+      'https://i.postimg.cc/gkXm21v7/copo-semana-dolce.jpg',
+      true,
+      ['*Foto ilustrativa.'],
+    ),
   ];
 
   private preOrderProducts: Product[] = [
