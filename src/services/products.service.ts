@@ -133,7 +133,7 @@ export class ProductsService {
         {
           name: 'Laka Oreo',
           description:
-            'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons Ouro Branco.',
+            'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons picados.',
         },
       ],
       'https://i.postimg.cc/gkXm21v7/copo-semana-dolce.jpg',
