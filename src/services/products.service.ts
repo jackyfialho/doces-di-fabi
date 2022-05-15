@@ -24,9 +24,8 @@ export class ProductsService {
             'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse areada de leite Ninho. O verdadeiro sabor da infância!',
         },
         {
-          name: 'Sensação',
-          description:
-            'Massa de chocolate aerada, acompanhada de um delicioso creme de chocolate e morango com frutas vermelhas, o Danone da Fabi!',
+          name: 'Chocolatudo da Fabi',
+          description: 'Massa de cacau e cremoso de chocolate.',
         },
       ],
       'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
@@ -71,6 +70,11 @@ export class ProductsService {
           description:
             'Nossa deliciosa mousse de leite ninho com brigadeiro cremoso e gotas de chocolate.',
         },
+        {
+          name: 'Rafaello',
+          description:
+            'Chocolate branco cremoso, amêndoas e coco ralado! Uma explosão de sabores!',
+        },
       ],
       'https://i.postimg.cc/kgpj3yQg/bombom-no-pote.jpg',
       true,
@@ -85,7 +89,7 @@ export class ProductsService {
       'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
     ),
     new Product(
-      'Fudge Laka Oreo da Fabi',
+      'Palha Italiana de Oreo',
       'R$ 13,00',
       'Deliciosa palha italiana de chocolate branco e Oreo.',
       '',
@@ -121,7 +125,7 @@ export class ProductsService {
     // ),
     new Product(
       'Copo Supreme Premium*',
-      'R$ 29,00',
+      'R$ 24,90',
       ' ',
       '340ml',
       [
