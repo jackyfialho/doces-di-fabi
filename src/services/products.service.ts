@@ -89,14 +89,6 @@ export class ProductsService {
       'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
     ),
     new Product(
-      'Palha Italiana de Oreo',
-      'R$ 13,00',
-      'Deliciosa palha italiana de chocolate branco e Oreo.',
-      '',
-      [],
-      'https://i.postimg.cc/WzsRF7fP/fudge-laka.jpg',
-    ),
-    new Product(
       'Trufas de chocolate da Fabi',
       '(unid. R$ 7,00)',
       'Você nunca comeu uma trufa tão cremosa! O chocolate derrete na boca',
