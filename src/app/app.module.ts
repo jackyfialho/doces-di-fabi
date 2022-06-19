@@ -21,6 +21,7 @@ import { FloatingButtonsComponent } from './shared/components/floating-buttons/f
 import { ChristmasMenuComponent } from './pages/christmas-menu/christmas-menu.component';
 import { EasterMenuComponent } from './pages/easter-menu/easter-menu.component';
 import { TheBakerComponent } from './shared/components/the-baker/the-baker.component';
+import { IfoodComponent } from './shared/components/ifood/ifood.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { TheBakerComponent } from './shared/components/the-baker/the-baker.compo
     ChristmasMenuComponent,
     EasterMenuComponent,
     TheBakerComponent,
+    IfoodComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],

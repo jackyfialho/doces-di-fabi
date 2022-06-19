@@ -2,7 +2,7 @@
 
 .floating-buttons {
   position: fixed;
-  top: 65vh;
+  top: 60vh;
   right: 2vw;
   z-index: 1040;
   background-color: rgba(0, 0, 0, 0.6);
@@ -50,6 +50,15 @@
     .instagram {
       margin-bottom: map-get($spacing, small);
       cursor: pointer;
+
+      @media (min-width: $sm) {
+        margin-bottom: 0;
+        margin-right: map-get($spacing, medium);
+      }
+    }
+
+    .whatsapp {
+      margin-bottom: map-get($spacing, small);
 
       @media (min-width: $sm) {
         margin-bottom: 0;
