@@ -1,0 +1,80 @@
+@import 'src/styles/sass/base';
+
+.list-menu-subitem-with-img {
+  padding-left: 20px;
+  padding-right: 18px;
+  padding-bottom: map-get($spacing, medium);
+  display: flex;
+  flex-direction: column;
+  column-gap: map-get($spacing, medium);
+  width: 100%;
+
+  @media (min-width: $lg) {
+    flex-direction: row;
+  }
+
+  .subitem-infos {
+    width: 100%;
+
+    @media (min-width: $lg) {
+      width: 40%;
+    }
+
+    .subitem-name {
+      padding: map-get($spacing, x-small) 0;
+      text-align: center;
+      font-size: map-get($font-size, medium);
+      font-weight: map-get($font-weight, medium);
+      font-style: italic;
+      text-decoration: underline;
+      text-align: left;
+    }
+
+    .subitem-description {
+      padding: map-get($spacing, x-small) map-get($spacing, small) 0 0;
+      font-size: map-get($font-size, small);
+      text-align: justify;
+    }
+
+    .subitem-extra-infos {
+      font-size: map-get($font-size, small);
+      text-align: left;
+      padding-top: map-get($spacing, small);
+
+      ul {
+        padding: 0;
+      }
+
+      ul > li {
+        list-style: none;
+      }
+    }
+  }
+
+  .subitem-img-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    @media (min-width: $lg) {
+      width: 60%;
+      justify-content: flex-end;
+      padding-top: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+
+      @media (min-width: $lg) {
+        max-width: 350px;
+        height: auto;
+      }
+    }
+  }
+}

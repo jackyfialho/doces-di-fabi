@@ -22,6 +22,7 @@ import { ChristmasMenuComponent } from './pages/christmas-menu/christmas-menu.co
 import { EasterMenuComponent } from './pages/easter-menu/easter-menu.component';
 import { TheBakerComponent } from './shared/components/the-baker/the-baker.component';
 import { IfoodComponent } from './shared/components/ifood/ifood.component';
+import { ListMenuSubitemWithImgComponent } from './shared/components/list-menu/list-menu-subitem-with-img/list-menu-subitem-with-img.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { IfoodComponent } from './shared/components/ifood/ifood.component';
     EasterMenuComponent,
     TheBakerComponent,
     IfoodComponent,
+    ListMenuSubitemWithImgComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],

@@ -8,7 +8,7 @@ import { Product } from 'src/models/products.model';
 export class ProductsService {
   private takeOutProducts: Product[] = [
     new Product(
-      'Bolos de pote',
+      'Bolos no pote',
       'R$ 15,00',
       ' ',
       '220ml',
@@ -16,72 +16,79 @@ export class ProductsService {
         {
           name: 'Nutelíssimo',
           description:
-            'Brigadeiro de verdadeira Nutella e mousse areada de leite Ninho, só a Fabi faz pra você!',
+            'Brigadeiro de verdadeira Nutella, massa de baunilha e mousse areada de leite Ninho, só a Fabi faz pra você!',
+          imgUrl: 'https://i.postimg.cc/hPJbg3mM/nutelissimo.jpg',
         },
         {
-          name: 'Abacaxi e Ninho',
+          name: 'Ninho com Abacaxi',
           description:
             'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse areada de leite Ninho. O verdadeiro sabor da infância!',
+          imgUrl: 'https://i.postimg.cc/br5xk17Q/abacaxi.jpg',
         },
         {
           name: 'Chocolatudo da Fabi',
-          description: 'Massa de cacau e cremoso de chocolate.',
+          description:
+            'Para os chocólatras de plantão, temos essa incrível composição com sabor de infância. Feito com massa de cacau e cremoso de chocolate.',
+          imgUrl: 'https://i.postimg.cc/Qd7J7w7h/chocolatudo.jpg',
+        },
+        {
+          name: 'Red Velvet com Frutas Vermelhas',
+          description:
+            'Um dos mais pedidos das nossas delícias: bolo Red Velvet com mousse de leite Ninho e geleia artesanal de frutas verfmelhas.',
+          imgUrl: 'https://i.postimg.cc/ht7gwfp8/red-velvet.jpg',
+        },
+        {
+          name: 'Prestígio',
+          description:
+            'Um sucesso para ninguém colocar defeito! Feito com massa de chocolate e recheio de coco, uma pedida perfeita para quem não gosta de nada muito doce.',
         },
       ],
-      'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
+      '',
     ),
     new Product(
-      'Torta no pote',
+      'Copos especiais',
       'R$ 16,00',
       '',
       '200ml',
       [
+        {
+          name: 'Ferrero',
+          description:
+            'Brigadeiro cremoso, amendoim triturado, brigadeiro de Nutella e bombom Ferrero.',
+          imgUrl: 'https://i.postimg.cc/g2TFHRRq/copo-ferrero.jpg',
+          extraInfos: true,
+          extraInfosArray: ['*Foto ilustrativa'],
+        },
         {
           name: 'Gelado de Maracujá',
           description:
             'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
+          imgUrl: 'https://i.postimg.cc/TPxrVd4H/copo-maracuja.jpg',
         },
         {
-          name: 'Gelado de Limão',
+          name: 'Surpresa de Uva',
           description:
-            'Um refrescante mousse de limão acompanhado de uma farofa crocante e chantilly!',
-        },
-      ],
-      'https://i.postimg.cc/j2py8STJ/torta-pote-maracuja.jpg',
-    ),
-    new Product(
-      'Bombom no pote*',
-      'R$ 16,00',
-      '',
-      '200ml',
-      [
-        {
-          name: 'Surpresa de uva',
-          description:
-            'Creme de cinco leites da Fabi, uvas selecionadas e brigadeiro cremoso!',
+            'Creme especial da Fabi cinco leites, uvas selecionadas e brigadeiro branco cremoso.',
+          imgUrl: 'https://i.postimg.cc/GhZPpJJR/copo_uva.jpg',
         },
         {
-          name: 'KitKat',
-          description:
-            'Creme de Nhá Benta com pedaços de KitKat e mousse de chocolate.',
+          name: 'Kit Kat',
+          description: 'Creme Nhá Benta com Kit Kat e mousse de chocolate.',
+          imgUrl: 'https://i.postimg.cc/dVr2Zk4y/copo_kit_kat.jpg',
         },
         {
           name: 'Dois amores',
           description:
-            'Nossa deliciosa mousse de leite ninho com brigadeiro cremoso e gotas de chocolate.',
-        },
-        {
-          name: 'Rafaello',
-          description:
-            'Chocolate branco cremoso, amêndoas e coco ralado! Uma explosão de sabores!',
+            'Mousse de ninho com brigadeiro cremoso e gotas de chocolate para finalizar.',
+          imgUrl: 'https://i.postimg.cc/pVcYwtmp/copo_laka_oreo.jpg',
+          extraInfos: true,
+          extraInfosArray: ['*Foto ilustrativa'],
         },
       ],
-      'https://i.postimg.cc/kgpj3yQg/bombom-no-pote.jpg',
-      true,
-      ['*Foto ilustrativa.'],
+      '',
     ),
     new Product(
-      'Crocantinha da Fabi',
+      'Crocantinha di Fabi',
       'R$ 13,00',
       'A melhor palha italiana da sua vida! Feita com brigadeiro cremoso, nossa queridinha Nutella e biscoito crocante! Cremosidade sem limite!',
       '',
@@ -89,52 +96,14 @@ export class ProductsService {
       'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
     ),
     new Product(
-      'Trufas de chocolate da Fabi',
-      '(unid. R$ 7,00)',
-      'Você nunca comeu uma trufa tão cremosa! O chocolate derrete na boca',
+      'Fatia Gourmet',
+      'R$ 14,00',
+      'Você precisa experimentar esse nosso lançamento. Feita com bolo de cenoura e recheio de ganache de chocolate: é imopssível não amar!',
       '',
       [],
-      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
-    ),
-    // new Product(
-    //   'Copo Supreme da Fabi',
-    //   'R$ 20,00',
-    //   ' ',
-    //   '250ml',
-    //   [
-    //     {
-    //       name: 'Kit Kat',
-    //       description:
-    //         'Nhá Benta com Kit Kat e mousse de chocolate, finalizada com o melhor brownie da sua vida! Porque você merece!',
-    //     },
-    //     {
-    //       name: 'Dois Amores',
-    //       description:
-    //         'Nossa deliciosa mousse de Ninhho com brigadeiro cremoso e pedaços de chocolate.',
-    //     },
-    //   ],
-    //   'https://i.postimg.cc/zGdPLZKw/copo-supreme-duo-de-brigadeiro.jpg',
-    // ),
-    new Product(
-      'Copo Supreme Premium*',
-      'R$ 24,90',
-      ' ',
-      '340ml',
-      [
-        {
-          name: 'Napolitano',
-          description:
-            'Mousse de Danoninho da Fabi acompanhada do melhor brownie, mousse de leite ninho e mousse de chocolate. Uma perfeição de copo!',
-        },
-        {
-          name: 'Laka Oreo',
-          description:
-            'Brigadeiro cremoso, mousse da Laka Oreo, nosso brownie e bombons picados.',
-        },
-      ],
-      'https://i.postimg.cc/gkXm21v7/copo-semana-dolce.jpg',
+      'https://i.postimg.cc/BQrQYsKT/fatia_gourmet.jpg',
       true,
-      ['*Foto ilustrativa.'],
+      ['*Foto ilustrativa'],
     ),
   ];
 

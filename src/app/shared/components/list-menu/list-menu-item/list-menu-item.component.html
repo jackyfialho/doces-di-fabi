@@ -32,15 +32,23 @@
   <div class="row">
     <div
       *ngIf="product.flavors.length !== 0"
-      class="product-flavors col-12 col-md-6 d-flex flex-column justify-content-center"
-      [ngClass]="{
-        'product-flavors product-with-image': product.imagePath !== ''
-      }"
+      [ngClass]="
+        product.imagePath !== ''
+          ? 'product-flavors product-with-image col-12 col-md-6 d-flex flex-column justify-content-center'
+          : 'product-flavors col-12 d-flex flex-column justify-content-center'
+      "
     >
-      <app-list-menu-subitem
-        *ngFor="let flavorEl of product.flavors; let i = index"
-        [subitem]="product.flavors[i]"
-      ></app-list-menu-subitem>
+      <div *ngFor="let flavorEl of product.flavors; let i = index">
+        <app-list-menu-subitem
+          *ngIf="!product.flavors[i].imgUrl; else subitemImg"
+          [subitem]="product.flavors[i]"
+        ></app-list-menu-subitem>
+        <ng-template #subitemImg>
+          <app-list-menu-subitem-with-img
+            [subitem]="product.flavors[i]"
+          ></app-list-menu-subitem-with-img>
+        </ng-template>
+      </div>
     </div>
 
     <div

@@ -1,0 +1,29 @@
+<div class="list-menu-subitem-with-img">
+  <div class="subitem-infos">
+    <div class="subitem-name">
+      {{ subitem.name }}
+      <span *ngIf="subitem.price" class="subitem-price"
+        >- {{ subitem.price }}</span
+      >
+    </div>
+    <div class="subitem-extra-infos" *ngIf="subitem.extraInfos">
+      <ul>
+        <li *ngFor="let item of subitem.extraInfosArray">{{ item }}</li>
+      </ul>
+    </div>
+    <div class="subitem-description" *ngIf="subitem.description">
+      {{ subitem.description }}
+    </div>
+  </div>
+
+  <div
+    class="subitem-img-container d-flex justify-content-left align-items-center"
+    *ngIf="subitem.imgUrl"
+  >
+    <img
+      [attr.src]="subitem.imgUrl"
+      [attr.alt]="subitem.name"
+      class="subitem-image"
+    />
+  </div>
+</div>

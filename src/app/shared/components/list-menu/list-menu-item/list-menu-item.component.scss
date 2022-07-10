@@ -13,7 +13,6 @@
     margin-bottom: map-get($spacing, medium);
     color: $darker-brown;
     font-size: map-get($font-size, large);
-    // text-align: left;
 
     .icon {
       color: $cookie-brown;
@@ -57,7 +56,7 @@
 
   .product-flavors {
     color: $dark-brown;
-    padding-left: 0;
+    padding: 0;
   }
 
   @media (min-width: $sm) {

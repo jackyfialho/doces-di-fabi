@@ -10,6 +10,7 @@ export class Product {
     extraInfos?: boolean;
     extraInfo1?: string;
     extraInfo2?: string;
+    imageUrl?: string;
   }[];
   public imagePath?: string;
   public hasMoreInfos?: boolean;
@@ -26,6 +27,7 @@ export class Product {
       price?: string;
       extraInfos?: boolean;
       extraInfosArray?: string[];
+      imgUrl?: string;
     }[],
     imgPath?: string,
     hasMoreInfos?: boolean,
