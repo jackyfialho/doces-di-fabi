@@ -32,15 +32,16 @@ export class ProductsService {
           imgUrl: 'https://i.postimg.cc/Qd7J7w7h/chocolatudo.jpg',
         },
         {
-          name: 'Red Velvet com Frutas Vermelhas',
-          description:
-            'Um dos mais pedidos das nossas delícias: bolo Red Velvet com mousse de leite Ninho e geleia artesanal de frutas verfmelhas.',
-          imgUrl: 'https://i.postimg.cc/ht7gwfp8/red-velvet.jpg',
-        },
-        {
           name: 'Prestígio',
           description:
             'Um sucesso para ninguém colocar defeito! Feito com massa de chocolate e recheio de coco, uma pedida perfeita para quem não gosta de nada muito doce.',
+          imgUrl: 'https://i.postimg.cc/wxDkwKtb/prestigio.jpg',
+        },
+        {
+          name: 'Delícia de abacaxi',
+          description:
+            'Nosso famoso creme de abacaxi acompanhado de massa de baunilha e a melhor cocada cremosa da sua vida!',
+          imgUrl: 'https://i.postimg.cc/R093C8Cq/delicia-de-abacaxi.jpg',
         },
       ],
       '',
@@ -62,18 +63,19 @@ export class ProductsService {
         {
           name: 'Gelado de Maracujá',
           description:
-            'Um maravilhoso mousse de maracujá, ganasche de chocolate e um delicioso chantilly!',
+            'Um maravilhoso mousse de maracujá com ganasche de chocolate, finalizado com gotas de chocolate ao leite.',
           imgUrl: 'https://i.postimg.cc/TPxrVd4H/copo-maracuja.jpg',
         },
         {
           name: 'Surpresa de Uva',
           description:
-            'Creme especial da Fabi cinco leites, uvas selecionadas e brigadeiro branco cremoso.',
+            'Creme especial da Fabi cinco leites, uvas selecionadas e brigadeiro gourmet cremoso.',
           imgUrl: 'https://i.postimg.cc/GhZPpJJR/copo_uva.jpg',
         },
         {
           name: 'Kit Kat',
-          description: 'Creme Nhá Benta com Kit Kat e mousse de chocolate.',
+          description:
+            'Mousse de leite ninho com Kit Kat e mousse de chocolate.',
           imgUrl: 'https://i.postimg.cc/dVr2Zk4y/copo_kit_kat.jpg',
         },
         {
