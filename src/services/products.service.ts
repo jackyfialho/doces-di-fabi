@@ -82,7 +82,7 @@ export class ProductsService {
           name: 'Dois amores',
           description:
             'Mousse de ninho com brigadeiro cremoso e gotas de chocolate para finalizar.',
-          imgUrl: 'https://i.postimg.cc/pVcYwtmp/copo_laka_oreo.jpg',
+          imgUrl: 'https://i.postimg.cc/cCV3qmrM/copo-dois-amores.jpg',
           extraInfos: true,
           extraInfosArray: ['*Foto ilustrativa'],
         },
