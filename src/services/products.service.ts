@@ -99,8 +99,8 @@ export class ProductsService {
     ),
     new Product(
       'Fatia Gourmet',
-      'R$ 14,00',
-      'Você precisa experimentar esse nosso lançamento. Feita com bolo de cenoura e recheio de ganache de chocolate: é imopssível não amar!',
+      'R$ 18,00',
+      'Você precisa experimentar esse nosso lançamento. Feita com bolo de cenoura e recheio de brigadeiro gourmet: é impossível não amar!',
       '',
       [],
       'https://i.postimg.cc/BQrQYsKT/fatia_gourmet.jpg',
