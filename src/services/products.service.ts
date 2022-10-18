@@ -8,6 +8,38 @@ import { Product } from 'src/models/products.model';
 export class ProductsService {
   private takeOutProducts: Product[] = [
     new Product(
+      'Trufa de Chocolate',
+      'R$ 7,90',
+      'A trufa de chocolate mais cremosa que você já comeu. Feita de puro chocolate.',
+      '',
+      [],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
+    ),
+    new Product(
+      'Pão de Mel da Fabi',
+      'R$ 9,90',
+      'O melhor pão de mel que você já comeu. Recheio de Nutella ou Doce de Leite.',
+      '',
+      [],
+      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
+    ),
+    new Product(
+      'Brownie Recheado',
+      'R$ 10,00',
+      'Brigadeiro tradicional, branco e doce de leite. O melhor brownie da sua vida.',
+      '',
+      [],
+      'https://i.postimg.cc/MTff9b7T/new-brownie.jpg',
+    ),
+    new Product(
+      'Crocantinha da Fabi',
+      'R$ 13,00',
+      'A melhor palha italiana da sua vida! Feita com brigadeiro cremoso, nossa queridinha Nutella e biscoito crocante. Cremosidade sem limite!',
+      '',
+      [],
+      'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
+    ),
+    new Product(
       'Bolos no pote',
       'R$ 15,00',
       ' ',
@@ -24,12 +56,6 @@ export class ProductsService {
           description:
             'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse areada de leite Ninho. O verdadeiro sabor da infância!',
           imgUrl: 'https://i.postimg.cc/br5xk17Q/abacaxi.jpg',
-        },
-        {
-          name: 'Chocolatudo da Fabi',
-          description:
-            'Para os chocólatras de plantão, temos essa incrível composição com sabor de infância. Feito com massa de cacau e cremoso de chocolate.',
-          imgUrl: 'https://i.postimg.cc/Qd7J7w7h/chocolatudo.jpg',
         },
         {
           name: 'Prestígio',
@@ -53,59 +79,52 @@ export class ProductsService {
       '200ml',
       [
         {
-          name: 'Ferrero',
-          description:
-            'Brigadeiro cremoso, amendoim triturado, brigadeiro de Nutella e bombom Ferrero.',
-          imgUrl: 'https://i.postimg.cc/g2TFHRRq/copo-ferrero.jpg',
-          extraInfos: true,
-          extraInfosArray: ['*Foto ilustrativa'],
-        },
-        {
           name: 'Gelado de Maracujá',
           description:
             'Um maravilhoso mousse de maracujá com ganasche de chocolate, finalizado com gotas de chocolate ao leite.',
           imgUrl: 'https://i.postimg.cc/TPxrVd4H/copo-maracuja.jpg',
         },
         {
-          name: 'Surpresa de Uva',
+          name: 'Bombom de Morango',
           description:
-            'Creme especial da Fabi cinco leites, uvas selecionadas e brigadeiro gourmet cremoso.',
-          imgUrl: 'https://i.postimg.cc/GhZPpJJR/copo_uva.jpg',
+            'Composto por um maravilhoso creme de leite ninho, morango e brigadeiro gourmet.',
+          imgUrl: 'https://i.postimg.cc/CxFnTWJQ/copo-morango.jpg',
         },
         {
-          name: 'Kit Kat',
+          name: 'Cheescake de Oreo',
           description:
-            'Mousse de leite ninho com Kit Kat e mousse de chocolate.',
-          imgUrl: 'https://i.postimg.cc/dVr2Zk4y/copo_kit_kat.jpg',
-        },
-        {
-          name: 'Dois amores',
-          description:
-            'Mousse de ninho com brigadeiro cremoso e gotas de chocolate para finalizar.',
-          imgUrl: 'https://i.postimg.cc/cCV3qmrM/copo-dois-amores.jpg',
+            'Um maravilhoso creme Cream Cheese, farofa de Oreo e Nutella, finalizado com mini oreos.',
+          imgUrl: 'https://i.postimg.cc/wBgkjrvZ/copo-supreme-oreo.jpg',
           extraInfos: true,
-          extraInfosArray: ['*Foto ilustrativa'],
+          extraInfosArray: ['*Foto Ilustrativa'],
         },
       ],
       '',
     ),
     new Product(
-      'Crocantinha di Fabi',
-      'R$ 13,00',
-      'A melhor palha italiana da sua vida! Feita com brigadeiro cremoso, nossa queridinha Nutella e biscoito crocante! Cremosidade sem limite!',
-      '',
-      [],
-      'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
-    ),
-    new Product(
-      'Fatia Gourmet',
+      'Fatia Slice Cake Brigaderuda',
       'R$ 18,00',
       'Você precisa experimentar esse nosso lançamento. Feita com bolo de cenoura e recheio de brigadeiro gourmet: é impossível não amar!',
       '',
       [],
-      'https://i.postimg.cc/BQrQYsKT/fatia_gourmet.jpg',
+      'https://i.postimg.cc/25kDxX8C/fatia-chocolate.png',
       true,
       ['*Foto ilustrativa'],
+    ),
+    new Product(
+      'Copos premium',
+      'R$ 19,00',
+      '',
+      '250ml',
+      [
+        {
+          name: 'Napolitano',
+          description:
+            'Uma deliciosa combinação de mousse de leite ninho, mousse aerado de chocolate meio amargo, brownie e geleia artesanal de frutas vermelhas.',
+          imgUrl: 'https://i.postimg.cc/Pxcf2BvR/copo_napolitano.jpg',
+        },
+      ],
+      '',
     ),
   ];
 
