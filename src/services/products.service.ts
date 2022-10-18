@@ -32,6 +32,14 @@ export class ProductsService {
       'https://i.postimg.cc/MTff9b7T/new-brownie.jpg',
     ),
     new Product(
+      'Kit Dois Amores',
+      'R$ 12,00',
+      'Brigadeiro gourmet tradicional e brigadeiro de leite ninho! Contém 4 brigadeiros.',
+      '',
+      [],
+      'https://i.postimg.cc/g2jvk0kv/kit-dois-amores.jpg',
+    ),
+    new Product(
       'Crocantinha da Fabi',
       'R$ 13,00',
       'A melhor palha italiana da sua vida! Feita com brigadeiro cremoso, nossa queridinha Nutella e biscoito crocante. Cremosidade sem limite!',
@@ -74,7 +82,7 @@ export class ProductsService {
     ),
     new Product(
       'Copos especiais',
-      'R$ 16,00',
+      '',
       '',
       '200ml',
       [
@@ -82,18 +90,21 @@ export class ProductsService {
           name: 'Gelado de Maracujá',
           description:
             'Um maravilhoso mousse de maracujá com ganasche de chocolate, finalizado com gotas de chocolate ao leite.',
+          price: 'R$ 17,00',
           imgUrl: 'https://i.postimg.cc/TPxrVd4H/copo-maracuja.jpg',
         },
         {
           name: 'Bombom de Morango',
           description:
             'Composto por um maravilhoso creme de leite ninho, morango e brigadeiro gourmet.',
+          price: 'R$ 16,00',
           imgUrl: 'https://i.postimg.cc/CxFnTWJQ/copo-morango.jpg',
         },
         {
           name: 'Cheescake de Oreo',
           description:
             'Um maravilhoso creme Cream Cheese, farofa de Oreo e Nutella, finalizado com mini oreos.',
+          price: 'R$ 16,00',
           imgUrl: 'https://i.postimg.cc/wBgkjrvZ/copo-supreme-oreo.jpg',
           extraInfos: true,
           extraInfosArray: ['*Foto Ilustrativa'],
@@ -113,7 +124,7 @@ export class ProductsService {
     ),
     new Product(
       'Copos premium',
-      'R$ 19,00',
+      'R$ 19,90',
       '',
       '250ml',
       [
