@@ -105,7 +105,7 @@ export class ProductsService {
           description:
             'Um maravilhoso creme Cream Cheese, farofa de Oreo e Nutella, finalizado com mini oreos.',
           price: 'R$ 16,00',
-          imgUrl: 'https://i.postimg.cc/wBgkjrvZ/copo-supreme-oreo.jpg',
+          imgUrl: 'https://i.postimg.cc/gjtmmpD2/copo-oreo.png',
           extraInfos: true,
           extraInfosArray: ['*Foto Ilustrativa'],
         },
@@ -141,93 +141,84 @@ export class ProductsService {
 
   private preOrderProducts: Product[] = [
     new Product(
+      'Bolo Piscina',
+      'R$ 55,00',
+      '',
+      '',
+      [
+        {
+          name: 'Chocolatudo',
+          description:
+            'Uma deliciosa massa feita a base de cacau 50% com cobertura de brigadeiro cremoso. Perfeito para os fãs de chocolate.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/d1m3zn0t/bolo-chocolatudo.jpg',
+        },
+        {
+          name: 'Cenoura',
+          description:
+            'Um dos nossos preferidos por aqui: massa de cenoura com cobertura de chocolate. A pedida perfeita para um lanche da tarde e reunir a criançada!',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/MHj2kVMt/bolo-piscina-fabi.jpg',
+        },
+      ],
+      '',
+      false,
+      [''],
+    ),
+    new Product(
       'Torta na travessa',
       '',
       '',
       '',
       [
         {
-          name: 'Nutelíssimo',
+          name: 'Morango',
           description:
-            'Brigadeiro da verdadeira Nutella e mousse areada de leite Ninho, só a Fabi faz pra você!',
+            'Creme cinco leites da Fabi. Morangos selecionados e brigadeiro gourmet cremoso.',
           price: '',
-          extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 180,00', 'Tamanho P - R$ 99,90'],
+          imgUrl: 'https://i.postimg.cc/BQWkdXsw/torta-morango-taca.jpg',
         },
         {
-          name: 'Abacaxi com ninho',
+          name: 'Abacaxi e cocada',
           description:
-            'Creme branco, massa aveludada de bolo com pedaços generosos de abacaxi e mousse aerada de leite Ninho. O verdadeiro sabor da infância!',
+            'Creme de abacaxi com cocada cremosa e massa de baunilha fofinha! O sabor da infância!',
           price: '',
-          extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 160,00', 'Tamanho P - R$ 90,00'],
+          imgUrl: 'https://i.postimg.cc/CKKT75pr/torta-abacaxi-coco.jpg',
+        },
+        {
+          name: 'Red Velvet*',
+          description:
+            'Massa aveludada red velvet, cream cheese e geleia de frutas vermelhas. *Foto Ilustrativa.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/zvVyYxrK/torta-red-velvet.jpg',
+        },
+        {
+          name: 'Gargamel*',
+          description:
+            'Uma deliciosa torta de creme quatro leites, brigadeiro cremoso e doce de leite! E pra ficar mais saborosa: praline de castanha e biscoito amantegado! Você vai se surpreender com essa gostosura! *Foto Ilustrativa.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/wMSH1ptx/torta-gargamel-taca.jpg',
         },
       ],
-      'https://i.postimg.cc/CKDW6qyq/nova-taca.jpg',
+      '',
       true,
-      ['Tamanho P: serve até 5 pessoas', 'Tamanho G: serve até 12 pessoas'],
+      ['Tamanho P - R$ 70,00', 'Tamanho G - R$ 120,00'],
     ),
     new Product(
-      'Bombons',
-      '',
-      '',
-      '',
-      [
-        {
-          name: 'Bombom de Uva',
-          description:
-            'Creme refrescante 4 leites, uvas selecionadas e finalizado com uma ganasche de chocolate meio amargo.',
-          price: '',
-          extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 130,00', 'Tamanho P - R$ 80,00'],
-        },
-        {
-          name: 'Dois Amores',
-          description:
-            'Torta mousse de chocolate com nossa deliciosa mousse de leite Ninho! Essa combinação não tem erro!',
-          price: '',
-          extraInfos: true,
-          extraInfosArray: ['Tamanho G - R$ 150,00', 'Tamanho P - R$ 90,00'],
-        },
-      ],
-      'https://i.postimg.cc/rwTWr6V2/supresa-uva.jpg',
-      true,
-      ['Tamanho P: serve até 5 pessoas', 'Tamanho G: serve até 12 pessoas'],
-    ),
-    new Product(
-      'Brownie Onstentação*',
-      '',
-      'Nosso maravilhoso brownie em cubos, com mousse de doce de leite cremoso e ganasche de chocolate meio amargo. *Foto da taça ilustrativa',
+      'Brigadeiro Gourmet*',
+      'R$ 180,00 (o cento)',
+      'Brigadeiro gourmet tradicional e brigadeiro de leite ninho! *Foto ilustrativa.',
       '',
       [],
-      'https://i.postimg.cc/fTw9zDfc/brownie-onstentacao-2.jpg',
-      true,
-      [
-        'Tamanho P (serve até 5 pessoas) - R$ 95,00',
-        'Tamanho G (serve até 12 pessoas) - R$ 170,00',
-      ],
+      'https://i.postimg.cc/g2jvk0kv/kit-dois-amores.jpg',
     ),
     new Product(
-      'Chocolatudo da Fabi',
-      'R$ 54,90',
-      'Uma massa de chocolate como vc nunca viu! Aerada é super fofa! Coberta com ganasche de chocolate! Quem não ama um lanche da tarde né!',
-      '',
-      [],
-      'https://i.postimg.cc/DZCrD35h/chocolatudo-fabi.png',
-    ),
-    new Product(
-      'Trufas da Fabi',
-      '(cento) R$ 350,00',
-      'São irresistíveis, com característico sabor de chocolate que derrete na primeira mordida!',
+      'Trufa de Chocolate',
+      'R$ 350,00 (o cento)',
+      'A trufa de chocolate mais cremosa que você já comeu. Feita de puro chocolate.',
       '',
       [],
       'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
-      true,
-      [
-        'Caixa com 4 unidades - R$ 22,90',
-        'Caixa com 6 unidades - R$ 34,90',
-        'Individuais (pedido mínimo de 10 unidades) - R$ 7,00',
-      ],
     ),
   ];
 

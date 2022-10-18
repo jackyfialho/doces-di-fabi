@@ -30,11 +30,41 @@
     encomenda! Garantimos que vocês irão amar as novidades!
   </p>
   <p *ngIf="menu === 'takeOut'">
-    Horário de funcionamento: de sexta a sábado das 10h às 18h e domingo das 10h
-    às 14h, conforme disponibilidade.
+    De terça à domingo. Entregas e retiradas por agendamento.
   </p>
 
-  <p *ngIf="menu === 'preOrder'">Pedidos com 2 (dois) dias de antecedência.</p>
+  <div class="pre-order-instructions" *ngIf="menu === 'preOrder'">
+    <span
+      >Atendimento: de terça a sábado das 10h às 18h. Entregas e retiradas por
+      agendamento.</span
+    >
+
+    <div>
+      <h5>Formas de pagamento:</h5>
+      <ul>
+        <li>Pix: (31) 99992-1588 (celular)</li>
+        <li>Cartão de débito/crédito</li>
+        <li>Dinheiro</li>
+      </ul>
+    </div>
+
+    <h5>Instruções</h5>
+    <ol>
+      <li>Escolha seus produtos</li>
+      <li>
+        Informe o sabor e tamanho de sua preferência junto com o endereço (em
+        caso de entrega).
+      </li>
+      <li>
+        Escolha a forma de pagamento e faça a entrada de 50% do valor total.
+      </li>
+      <li>
+        Agende dia e horário da retirada ou entrega acordado no dia do
+        agendamento.
+      </li>
+      <li>Bom apetite!</li>
+    </ol>
+  </div>
 
   <p *ngIf="menu === 'easter'" class="easter">
     Data de encerramento de agenda: 08 de abril ou enquanto houver
