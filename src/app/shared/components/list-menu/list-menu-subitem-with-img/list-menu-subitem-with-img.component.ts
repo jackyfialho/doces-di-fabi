@@ -14,6 +14,7 @@ export class ListMenuSubitemWithImgComponent implements OnInit {
     extraInfo1?: string;
     extraInfo2?: string;
     imgUrl?: string;
+    obs?: string;
   };
 
   constructor() {}

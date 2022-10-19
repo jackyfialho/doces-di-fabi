@@ -11,10 +11,12 @@ export class Product {
     extraInfo1?: string;
     extraInfo2?: string;
     imageUrl?: string;
+    obs?: string;
   }[];
   public imagePath?: string;
   public hasMoreInfos?: boolean;
   public moreInfosArray?: string[];
+  public observation?: string;
 
   constructor(
     name: string,
@@ -28,10 +30,12 @@ export class Product {
       extraInfos?: boolean;
       extraInfosArray?: string[];
       imgUrl?: string;
+      obs?: string;
     }[],
     imgPath?: string,
     hasMoreInfos?: boolean,
     moreInfosArray?: string[],
+    observation?: string,
   ) {
     this.name = name;
     this.price = price;
@@ -41,5 +45,6 @@ export class Product {
     this.imagePath = imgPath;
     this.hasMoreInfos = hasMoreInfos;
     this.moreInfosArray = moreInfosArray;
+    this.observation = observation;
   }
 }

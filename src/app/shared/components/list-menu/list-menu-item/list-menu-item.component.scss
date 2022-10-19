@@ -49,6 +49,13 @@
     text-align: justify;
   }
 
+  .product-obs {
+    text-align: left;
+    font-size: map-get($font-size, small);
+    font-weight: map-get($font-weight, normal);
+    font-style: italic;
+  }
+
   .product-weight {
     margin-top: -15px;
     font-size: map-get($font-size, x-medium);

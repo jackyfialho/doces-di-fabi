@@ -36,6 +36,14 @@
       text-align: justify;
     }
 
+    .subitem-obs {
+      padding: map-get($spacing, medium) 0;
+      font-size: map-get($font-size, x-small);
+      text-align: justify;
+      font-style: italic;
+      font-weight: map-get($font-weight, light);
+    }
+
     .subitem-extra-infos {
       font-size: map-get($font-size, small);
       text-align: left;
