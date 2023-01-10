@@ -10,11 +10,14 @@ import { EasterMenuComponent } from './pages/easter-menu/easter-menu.component';
 import { DolceWeekComponent } from './pages/dolce-week/dolce-week.component';
 import { CompleteMenuComponent } from './pages/complete-menu/complete-menu.component';
 import { AboutComponent } from './pages/about/about.component';
+import { UnderConstructionComponent } from './shared/components/under-construction/under-construction.component';
 
 const routes: Routes = [
   { path: '', component: NavigationComponent },
-  { path: 'cardapio-pronta-entrega', component: TakeOutMenuComponent },
-  { path: 'cardapio-encomendas', component: PreOrderMenuComponent },
+  // { path: 'cardapio-pronta-entrega', component: TakeOutMenuComponent },
+  { path: 'cardapio-pronta-entrega', component: UnderConstructionComponent },
+  // { path: 'cardapio-encomendas', component: PreOrderMenuComponent },
+  { path: 'cardapio-encomendas', component: UnderConstructionComponent },
   { path: 'cardapio-natal', component: ChristmasMenuComponent },
   { path: 'cardapio-pascoa', component: EasterMenuComponent },
   { path: 'semana-dolce', component: DolceWeekComponent },
