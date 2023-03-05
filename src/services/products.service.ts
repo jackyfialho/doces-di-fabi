@@ -419,6 +419,256 @@ export class ProductsService {
     ),
   ];
 
+  private docesNoPoteProducts: Product[] = [
+    new Product(
+      'Bolo  no Pote Tradicional',
+      'R$ 15,00',
+      ' ',
+      '200g',
+      [
+        {
+          name: 'Delícia de Abacaxi',
+          description:
+            'Massa de baunilha super macia, creme branco com pedaços generosos de abacaxi e a cocada da Fabi. Um sabor de infância dentro do pote.',
+        },
+        {
+          name: 'Negresco',
+          description:
+            'Massa de cacau com recheio de negresco e mousse de chocolate meio amargo.',
+        },
+        {
+          name: 'Nutelíssimo',
+          description:
+            'Massa de baunilha, brigadeiro de Nutella e mousse de leite ninho da Fabi.',
+        },
+        {
+          name: 'Chocolatudo',
+          description:
+            'Massa de cacau, mousse de chocolate meio amargo e creme de chocolate.',
+        },
+      ],
+      'https://i.postimg.cc/3xxm7jKp/novo_bolo_pote.jpg',
+    ),
+    new Product(
+      'Bolo  no Pote Premium',
+      'R$ 16,00',
+      ' ',
+      '200g',
+      [
+        {
+          name: 'Ninho com Morango',
+          description:
+            'Massa de baunilha, morangos frescos e selecionados, brigadeiro meio amargo.',
+        },
+        {
+          name: 'Red Velvet',
+          description:
+            'Massa aveludada e saborizada com geleia artesanal de morango, cream cheese e geleia de frutas vermelhas.',
+        },
+        {
+          name: 'Frutas Vermelhas',
+          description:
+            'Massa de baunilha com geleia artesanal de frutas vermelhas e mousse de leite ninho.',
+        },
+      ],
+      'https://i.postimg.cc/mZFKTMdP/novo-red-velvet.jpg',
+    ),
+    new Product(
+      'Brownie no Pote',
+      'R$ 17,00',
+      'Nosso maravilhoso brownie com recheio de caramelo e brigadeiro meio amargo.',
+      '200g',
+      [],
+      'https://i.postimg.cc/MTff9b7T/new-brownie.jpg',
+    ),
+    new Product(
+      'Pão de Mel no Pote',
+      'R$ 17,00',
+      'Massa de pão de mel, doce de leite cremoso e ganasche meio amargo.',
+      '200g',
+      [],
+      'https://i.postimg.cc/J0gpwB6r/pao-de-mel.jpg',
+    ),
+    new Product(
+      'Caixa de trufas',
+      'R$ 16,00',
+      'Nossas trufas cremosas dentro de uma caixa de amor com cinco unidades.',
+      '140g',
+      [],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
+    ),
+    new Product(
+      'Crocantinha',
+      'R$ 15,00',
+      'Nossa crocantinha está de volta! Brigadeiro cremoso recheado de Nutella todo envolvido em negresco.  Caixa com quatro unidades.',
+      '120g',
+      [],
+      'https://i.postimg.cc/HnF1dhz8/crocantinha-v2.png',
+    ),
+  ];
+
+  private giveAwayProducts: Product[] = [
+    new Product(
+      'Verrines',
+      'R$ 25,00',
+      '',
+      '200g',
+      [
+        {
+          name: 'Frutas Vermelhas',
+          description:
+            'Mousse de leite ninho, geleia de frutas vermelhas e biscoito crocante da Fabi.',
+        },
+        {
+          name: 'Abacaxi e Cocada Cremosa',
+          description:
+            'Nosso creme de abacaxi acompanhado de uma deliciosa cocada e biscoito crocante.',
+        },
+        {
+          name: 'Duo',
+          description:
+            'Mousse de leite ninho, brigadeiro cremoso e um toque de geleia artesanal acompanhada do crocante da Fabi.',
+        },
+        {
+          name: 'Chocolatuda',
+          description:
+            'Brigadeiro meio amargo cremoso, brigadeiro branco e crocante de chocolate.',
+        },
+      ],
+      'https://i.postimg.cc/cCV3qmrM/copo-dois-amores.jpg',
+    ),
+  ];
+
+  private desertsProducts: Product[] = [
+    new Product(
+      'Torta na travessa',
+      '',
+      '',
+      '',
+      [
+        {
+          name: 'Morango',
+          description:
+            'Creme cinco leites da Fabi, morangos selecionados, massa de baunilha e brigadeiro cremoso.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/BQWkdXsw/torta-morango-taca.jpg',
+        },
+        {
+          name: 'Delícia de Abacaxi',
+          description:
+            'Creme branco envolvido com pedaços generosos de abacaxi, massa de baunilha e cocada cremosa.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/CKKT75pr/torta-abacaxi-coco.jpg',
+        },
+        {
+          name: 'Red Velvet',
+          description:
+            'Massa aveludada com sabor diferenciado de geleia artesanal, recheio de frutas vermelhas e cream cheese.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/zvVyYxrK/torta-red-velvet.jpg',
+          obs: 'Imagem ilustrativa.',
+        },
+        {
+          name: 'Gargamel',
+          description:
+            'Creme de cinco leites da Fabi, brigadeiro cremoso, mousse de doce de leite e praline de castanha de caju.',
+          price: '',
+          imgUrl: 'https://i.postimg.cc/wMSH1ptx/torta-gargamel-taca.jpg',
+          obs: 'Imagem ilustrativa.',
+        },
+      ],
+      '',
+      true,
+      [
+        'Tamanho P - R$ 130,00 (serve aprox. 6 pessoas)',
+        'Tamanho G - R$ 180,00 (serve aprox. 10 pessoas)',
+      ],
+    ),
+    new Product(
+      'Caixa presente',
+      'R$ 60,00',
+      '4 trufas de chocolate, 2 crocantinhas (100g cada), 1 bolo de pote personalizado (consultar sabores disponíveis).',
+      '',
+      [],
+      'https://i.postimg.cc/L58dxBLG/kit-fabi.jpg',
+      false,
+      [''],
+      'Imagem ilustrativa.',
+    ),
+    new Product(
+      'Monte sua caixa',
+      '',
+      'Monte sua caixa personalizada com tudo o que mais gosta!',
+      '',
+      [],
+      'https://i.postimg.cc/VkB8sT7j/kit-master.jpg',
+      false,
+      [''],
+      'Imagem ilustrativa.',
+    ),
+  ];
+
+  private eventsProducts: Product[] = [
+    new Product(
+      'Trufas de Chocolate',
+      'R$ 330,00 (o cento)',
+      '',
+      '',
+      [],
+      'https://i.postimg.cc/MXJcBPcC/trufa-de-chocolate.jpg',
+      true,
+      ['Pedido mínimo: 25 unidades.'],
+    ),
+    new Product(
+      'Mini Pote de Brigadeiro',
+      'R$ 5,00/cada',
+      '',
+      '',
+      [
+        {
+          name: 'Brigadeiro Tradicional',
+        },
+        {
+          name: 'Brigadeiro branco',
+        },
+        {
+          name: 'Brigadeiro de leite ninho',
+        },
+      ],
+      'https://i.postimg.cc/0jgzV7Bp/bg-beijinho.jpg',
+      true,
+      ['Pedido mínimo: 25 unidades.'],
+      'Imagem ilustrativa',
+    ),
+    new Product(
+      'Bolo no pote versão aniversário',
+      'R$ 8,00/cada',
+      '',
+      '',
+      [
+        {
+          name: 'Nutelíssimo',
+        },
+        {
+          name: 'Chocolatudo',
+        },
+        {
+          name: 'Abacaxi e cocada',
+        },
+        {
+          name: 'Negresco',
+        },
+        {
+          name: 'Prestígio',
+        },
+      ],
+      'https://i.postimg.cc/rmzt2tXP/bolo-de-pote.jpg',
+      true,
+      ['Pedido mínimo: 25 unidades.'],
+      'Imagem ilustrativa',
+    ),
+  ];
+
   getTakeOutProducts() {
     return this.takeOutProducts.slice();
   }
@@ -437,5 +687,21 @@ export class ProductsService {
 
   getEasterProducts() {
     return this.easterProducts.slice();
+  }
+
+  getDocesNoPoteProducts() {
+    return this.docesNoPoteProducts.slice();
+  }
+
+  getGiveAwayProducts() {
+    return this.giveAwayProducts.slice();
+  }
+
+  getDesertsProducts() {
+    return this.desertsProducts.slice();
+  }
+
+  getEventsProducts() {
+    return this.eventsProducts.slice();
   }
 }

@@ -11,13 +11,20 @@ import { DolceWeekComponent } from './pages/dolce-week/dolce-week.component';
 import { CompleteMenuComponent } from './pages/complete-menu/complete-menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { UnderConstructionComponent } from './shared/components/under-construction/under-construction.component';
+import { DocesNoPoteComponent } from './pages/doces-no-pote/doces-no-pote.component';
+import { PresenteaveisComponent } from './pages/presenteaveis/presenteaveis.component';
+import { SobremesasComponent } from './pages/sobremesas/sobremesas.component';
+import { EventosComponent } from './pages/eventos/eventos.component';
 
 const routes: Routes = [
   { path: '', component: NavigationComponent },
   // { path: 'cardapio-pronta-entrega', component: TakeOutMenuComponent },
-  { path: 'cardapio-pronta-entrega', component: UnderConstructionComponent },
   // { path: 'cardapio-encomendas', component: PreOrderMenuComponent },
-  { path: 'cardapio-encomendas', component: UnderConstructionComponent },
+  { path: 'doces-no-pote', component: DocesNoPoteComponent },
+  { path: 'presenteaveis', component: PresenteaveisComponent },
+  { path: 'sobremesas', component: SobremesasComponent },
+  { path: 'eventos', component: EventosComponent },
+  { path: 'cardapio-natal', component: ChristmasMenuComponent },
   { path: 'cardapio-natal', component: ChristmasMenuComponent },
   { path: 'cardapio-pascoa', component: EasterMenuComponent },
   { path: 'semana-dolce', component: DolceWeekComponent },

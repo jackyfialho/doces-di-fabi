@@ -2,6 +2,10 @@
 <div class="menu-container" id="product-list">
   <h4 *ngIf="menu === 'takeOut'">Cardápio pronta entrega</h4>
   <h4 *ngIf="menu === 'preOrder'">Cardápio de encomendas</h4>
+  <h4 *ngIf="menu === 'docesNoPote'">Doces no Pote</h4>
+  <h4 *ngIf="menu === 'presenteaveis'">Presenteáveis</h4>
+  <h4 *ngIf="menu === 'sobremesas'">Sobremesas</h4>
+  <h4 *ngIf="menu === 'eventos'">Eventos</h4>
   <h4 *ngIf="menu === 'dolceWeek'">Semana Dolce - {{ dolceWeekMonth }}</h4>
   <h4 *ngIf="menu === 'christmas'" class="christmas">
     <fa-icon class="icon" [icon]="faCandyCane" size="1x"></fa-icon>
