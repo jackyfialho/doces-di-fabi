@@ -507,7 +507,7 @@ export class ProductsService {
       'Mousse de maracujá com ganasche de chocolate.',
       '200g',
       [],
-      'https://i.postimg.cc/TPxrVd4H/copo-maracuja.jpg',
+      'https://i.postimg.cc/jSWzSw5j/gelado-de-maracuja.jpg',
     ),
     new Product(
       'Bombom de uva',
@@ -515,7 +515,7 @@ export class ProductsService {
       'Creme de cinco leites com brigadeiro e uvas verdes.',
       '200g',
       [],
-      'https://i.postimg.cc/GhZPpJJR/copo-uva.jpg',
+      'https://i.postimg.cc/GmkmKdgQ/bombom-de-uva-2.jpg',
     ),
   ];
 
@@ -619,7 +619,7 @@ export class ProductsService {
     ),
     new Product(
       'Mini Pote de Brigadeiro',
-      'R$ 5,00/cada',
+      'R$ 5,00 (cada)',
       '',
       '',
       [
@@ -640,7 +640,7 @@ export class ProductsService {
     ),
     new Product(
       'Bolo no pote versão aniversário',
-      'R$ 8,00/cada',
+      'R$ 8,00 (cada)',
       '',
       '',
       [
